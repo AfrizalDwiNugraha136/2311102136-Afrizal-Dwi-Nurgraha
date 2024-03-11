@@ -3,7 +3,12 @@
 
 ## Dasar Teori
 
-### Tipe data pemrograman merupakan atribut yang berkaitan dengan data yang akan memberi tahu sistem komputer. Sehingga nantinya bisa menafsirkan nilai dari data tersebut. Secara khusus, tipe data adalah format penyimpanan data. Data bisa dalam bentuk variabel untuk tipe data tertentu..
+Tipe data pemrograman merupakan atribut yang berkaitan dengan data yang akan memberi tahu sistem komputer. Sehingga nantinya bisa menafsirkan nilai dari data tersebut. Secara khusus, tipe data adalah format penyimpanan data. Data bisa dalam bentuk variabel untuk tipe data tertentu.
+1. Tipe data primitif adalah tipe data bawaan dari bahasa pemrograman, di Java ada delapan tipe data primitif, dan semuanya sudah kita bahas yaitu : byte, short, int, long, float, double, boolean,dan char
+
+2. Tipe data abstrak, adalah tipe data yang merupakan hasil imajinasi kita dengan memberikan beberapa batasan domain maupun operasinya. Contoh : usia, daftar nilai.
+
+3. Tipe data koleksi adalah suatu kumpulan data yang terstruktur dalam bentuk list, tuple, set, atau dictionary. Python menyediakan beberapa tipe data koleksi yang dapat menyimpan berbagai macam tipe data, termasuk string, numerik, dan koleksi. Tipe data koleksi dapat berisi obyek lain dengan berbagai macam tipe data, dan dapat berubah-ubah (mutable) atau tidak berubah (immutable) tergantung pada tipe data koleksi yang digunakan.
 
 ## Guided 
 
@@ -224,4 +229,6 @@ int main() {
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] [https://it.telkomuniversity.ac.id/6-tipe-data-pemrograman-yang-harus-anda-pahami-apa-saja/](https://it.telkomuniversity.ac.id/6-tipe-data-pemrograman-yang-harus-anda-pahami-apa-saja/#:~:text=Tipe%20data%20pemrograman%20merupakan%20atribut,variabel%20untuk%20tipe%20data%20tertentu.)https://it.telkomuniversity.ac.id/6-tipe-data-pemrograman-yang-harus-anda-pahami-apa-saja/#:~:text=Tipe%20data%20pemrograman%20merupakan%20atribut,variabel%20untuk%20tipe%20data%20tertentu.
+[2] https://www.programmerzamannow.com/pemrograman/java/dasar/tipe-data-bukan-primitif/#:~:text=Tipe%20data%20primitif%20adalah%20tipe,int
+[3] https://id.scribd.com/document/626864127/Tipe-Data-Koleksi

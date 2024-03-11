@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 // Fungsi untuk menghitung rata-rata dari sejumlah nilai
 float hitungRataRata(int jumlahNilai) {
     int total = 0;
@@ -22,12 +24,12 @@ int main() {
     cout << "---------------------------------\n";
 
     // Input jumlah nilai dari pengguna
-    cout << "Masukkan jumlah nilai: ";
+    cou2t << "Masukkan jumlah nilai: ";
     cin >> jumlahNilai;
 
     // Memanggil fungsi hitungRataRata dan menampilkan hasil
     float rataRata = hitungRataRata(jumlahNilai);
-    cout << "Rata-rata nilai adalah: " << rataRata << endl;
+    cout << "Rata-rata nilai adalah: " << rataRata;
 
     return 0;
 }

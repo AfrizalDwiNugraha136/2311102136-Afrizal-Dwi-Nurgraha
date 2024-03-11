@@ -6,8 +6,8 @@ float hitungRataRata(int jumlahNilai) {
     int nilai;
 
     for (int i = 0; i < jumlahNilai; i++) {
-        std::cout << "Masukkan nilai ke-" << i + 1 << ": ";
-        std::cin >> nilai;
+        cout << "Masukkan nilai ke-" << i + 1 << ": ";
+        cin >> nilai;
         total += nilai;
     }
 
@@ -18,16 +18,16 @@ float hitungRataRata(int jumlahNilai) {
 int main() {
     int jumlahNilai;
 
-    std::cout << "Program Menghitung Rata-Rata Nilai\n";
-    std::cout << "---------------------------------\n";
+    cout << "Program Menghitung Rata-Rata Nilai\n";
+    cout << "---------------------------------\n";
 
     // Input jumlah nilai dari pengguna
-    std::cout << "Masukkan jumlah nilai: ";
-    std::cin >> jumlahNilai;
+    cout << "Masukkan jumlah nilai: ";
+    cin >> jumlahNilai;
 
     // Memanggil fungsi hitungRataRata dan menampilkan hasil
     float rataRata = hitungRataRata(jumlahNilai);
-    std::cout << "Rata-rata nilai adalah: " << rataRata << std::endl;
+    cout << "Rata-rata nilai adalah: " << rataRata << endl;
 
     return 0;
 }

@@ -230,5 +230,7 @@ Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran
 
 ## Referensi
 [1] [https://it.telkomuniversity.ac.id/6-tipe-data-pemrograman-yang-harus-anda-pahami-apa-saja/](https://it.telkomuniversity.ac.id/6-tipe-data-pemrograman-yang-harus-anda-pahami-apa-saja/#:~:text=Tipe%20data%20pemrograman%20merupakan%20atribut,variabel%20untuk%20tipe%20data%20tertentu.)https://it.telkomuniversity.ac.id/6-tipe-data-pemrograman-yang-harus-anda-pahami-apa-saja/#:~:text=Tipe%20data%20pemrograman%20merupakan%20atribut,variabel%20untuk%20tipe%20data%20tertentu.
+
 [2] https://www.programmerzamannow.com/pemrograman/java/dasar/tipe-data-bukan-primitif/#:~:text=Tipe%20data%20primitif%20adalah%20tipe,int
+
 [3] https://id.scribd.com/document/626864127/Tipe-Data-Koleksi

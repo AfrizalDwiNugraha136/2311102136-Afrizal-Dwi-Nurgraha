@@ -172,7 +172,16 @@ int main() {
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan01/Unguided%201%20tipe%20data.PNG?raw=true)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program di atas header yang diperlukan untuk operasi input dan output. Fungsi rata-rata ini mengambil parameter bilangan bulat (numberofValues), yang mewakili jumlah nilai yang akan dirata-ratakan. Di dalam fungsinya, loop memungkinkan Anda memasukkan nilai  pengguna dan menghitung jumlahnya. Fungsi utama adalah pintu masuk ke program.  Ia meminta pengguna untuk memasukkan beberapa nilai dan kemudian memanggil fungsi Hitung Rata-Rata dengan jumlah nilai yang diberikan.  Hasilnya kemudian akan ditampilkan, menunjukkan rata-rata terhitung dari nilai yang dimasukkan.
+
+Kesimpulan Tipe Data Primitif:
+Tipe data primitif dalam pemrograman C++ adalah tipe data dasar yang digunakan untuk menyimpan nilai sederhana.
+ Berikut  kesimpulan mengenai tipe data primitif pada C++: int: Digunakan untuk menyimpan bilangan bulat (integer).
+ float: Digunakan untuk menyimpan bilangan pecahan (floating point) dengan presisi rendah.
+ ganda: Digunakan untuk menyimpan bilangan campuran dengan presisi lebih tinggi dibandingkan bilangan floating point.
+ char: Digunakan untuk menyimpan karakter, seperti huruf atau simbol.
+ Tipe data primitif ini memberikan dasar untuk membangun struktur data yang lebih kompleks dalam pemrograman C++.
+ Memilih tipe data yang tepat  penting untuk efisiensi penyimpanan dan kinerja program.
 
 ### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya!
 
@@ -224,6 +233,19 @@ int main() {
  #### Output:
  ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Unguided%202%20tipe%20data.PNG?raw=true).
 
+ Class:
+ Fungsi: 1. Merupakan tipe data pengguna yang memungkinkan  data dan fungsi  terkait dikelompokkan menjadi satu kesatuan.
+         2. Membantu  menerapkan konsep pemrograman berorientasi objek (OOP) seperti enkapsulasi, pewarisan, dan polimorfisme.
+
+Struct:
+Fungsi:  1. Mirip dengan kelas, tetapi bersifat publik secara default  (variabel dan fungsi anggota dapat diakses langsung).
+         2. Digunakan untuk pengelompokan data  sederhana tanpa menjalankan fungsi khusus.
+         
+Kesimpulan: 
+1. class dan struktur keduanya digunakan untuk mengatur data, namun kelas menyediakan lebih banyak fungsi seperti         enkapsulasi dan dapat memiliki fungsi anggota.
+2. Kelas  lebih cocok  untuk mengelompokkan data dan perilaku terkait, sedangkan struct lebih sederhana dan cocok untuk mengelompokkan data tanpa perilaku tambahan.
+3. Pilihan antara kelas dan struktur bergantung pada kebutuhan dan kompleksitas desain program.
+
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map!
 
 #include <iostream>
@@ -265,9 +287,31 @@ int main() {
 #### Output:
  ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan01/unguided%203.PNG?raw=true).
 
+ Perbedaan antara Array dan Map:
+ 1. Tipe data tersimpan:
+    -Array : Menyimpan data dalam urutan indeks  berurutan dan memerlukan tipe data indeks  berupa bilangan bulat.
+    -Map   : Menyimpan data sebagai pasangan nilai kunci, dengan kunci dapat berupa tipe data apa pun.
+ 2. Akses  Data:
+    -Array : Gunakan indeks numerik untuk mengakses dan menyimpan data.
+    -Map   : Gunakan kunci untuk mengakses dan menyimpan data.Kuncinya tidak harus berupa bilangan bulat dan dapat berupa tipe data apa 
+             pun.
+ 3. Ukuran:
+    -Array : Memiliki ukuran  tetap dan harus dideklarasikan pada waktu kompilasi.
+    -Map   : bersifat dinamis dan dapat bertambah atau berkurang ukurannya seiring berjalannya program.
+ 4. Pemakaian:
+    -Array : Cocok digunakan jika kita mempunyai data sekuensial dan  indeks  jelas.
+    -Map   : Cocok bila kita memiliki data yang dapat diidentifikasi berdasarkan kunci dan tidak perlu mempertahankan urutan tertentu.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Tipe data primitif adalah tipe data yang  ditentukan  sistem dan disediakan oleh banyak bahasa pemrograman.
+ Ini adalah elemen dasar untuk menyimpan nilai sederhana. Contoh tipe data primitif: Int (Integer) Float (Desimal) Char (Letter) Boolean (True/False) Tipe data abstrak sering juga disebut tipe data Data abstrak adalah tipe data yang dibuat sendiri oleh programmer.
+ Tipe data abstrak bisa berisi banyak tipe data, sehingga bisa memiliki banyak nilai dan  tipe data yang berbeda.
+ Tipe data  Collection adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan.
+ Tipe data kumpulan memungkinkan Anda menyimpan, mengelola, dan mengakses data dalam jumlah besar  dengan cara yang terstruktur.
+ Contoh pengumpulan data: Array (struktur data statis yang menyimpan elemen bertipe data  sama) Vector (vektor mirip array yang mampu menyimpan data sebagai elemen alokasi memori dilakukan secara otomatis dan berdekatan)  Map (Peta adalah seperti array tetapi memiliki indeks yang memungkinkan  tipe data selain bilangan bulat) Fungsi peta adalah fungsi yang dapat digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek sekaligus.
+ Perbedaan antara array dan map adalah: Indeks: Array harus berupa bilangan bulat non-negatif dan berurutan dimulai dari 0 - Peta dapat mempunyai nilai berapa pun dan tidak harus berurutan.
+ Ukuran: Array harus dideklarasikan dengan ukuran  tetap - Peta dapat dideklarasikan dengan ukuran  dinamis Tipe data: Array hanya dapat menggunakan tipe data primitif - Peta dapat menggunakan tipe data  berbeda dan bukan hanya tipe data primitif 
+.
 
 ## Referensi
 [1] [https://it.telkomuniversity.ac.id/6-tipe-data-pemrograman-yang-harus-anda-pahami-apa-saja/](https://it.telkomuniversity.ac.id/6-tipe-data-pemrograman-yang-harus-anda-pahami-apa-saja/#:~:text=Tipe%20data%20pemrograman%20merupakan%20atribut,variabel%20untuk%20tipe%20data%20tertentu.)https://it.telkomuniversity.ac.id/6-tipe-data-pemrograman-yang-harus-anda-pahami-apa-saja/#:~:text=Tipe%20data%20pemrograman%20merupakan%20atribut,variabel%20untuk%20tipe%20data%20tertentu.

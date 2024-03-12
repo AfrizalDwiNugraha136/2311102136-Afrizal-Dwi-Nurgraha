@@ -133,6 +133,10 @@ Kode yang diberikan adalah program C++ sederhana yang mendeklarasikan dan mengin
 
 ### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!
 
+/*
+Afrizal Dwi Nugraha - 2311102136
+*/
+
 #include <iostream>
 
 using namespace std;
@@ -184,6 +188,10 @@ Tipe data primitif dalam pemrograman C++ adalah tipe data dasar yang digunakan u
  Memilih tipe data yang tepat  penting untuk efisiensi penyimpanan dan kinerja program.
 
 ### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya!
+
+/*
+Afrizal Dwi Nugraha - 2311102136
+*/
 
 #include <iostream>
 #include <string>
@@ -247,6 +255,10 @@ Kesimpulan:
 3. Pilihan antara kelas dan struktur bergantung pada kebutuhan dan kompleksitas desain program.
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map!
+
+/*
+Afrizal Dwi Nugraha - 2311102136
+*/
 
 #include <iostream>
 #include <map>

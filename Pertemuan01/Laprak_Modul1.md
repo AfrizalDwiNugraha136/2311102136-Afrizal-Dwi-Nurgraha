@@ -263,7 +263,7 @@ int main() {
 } 
 
 #### Output:
- ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Unguided%202%20tipe%20data.PNG?raw=true).
+ ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan01/unguided%203.PNG?raw=true).
 
 
 ## Kesimpulan

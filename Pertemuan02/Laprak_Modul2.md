@@ -104,44 +104,62 @@ Kode ini menunjukkan program C++ untuk mencari nilai maksimum dalam sebuah array
 
 ## Unguided 
 
-### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!
+### 1. Buatlah program untuk menampilkan output seperti berikut dengan data yang diinputkan oleh user!
+![Screenshot Soal Unguided 1](SoalUnguided1.png)
 
+'''C++
+// LAPRAK 2 : UNGUIDED 1
+// AFRIZAL DWI NUGRAHA
+// 2311102136
+// S1 IF-11-D
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-// Fungsi untuk menghitung rata-rata dari sejumlah nilai
-float hitungRataRata(int jumlahNilai) {
-    int total = 0;
-    int nilai;
+int main() {
+    // Inisialisasi array
+    int dataArray_136[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    vector<int> Afi_136;
+    vector<int> IF11D_136;
 
-    for (int i = 0; i < jumlahNilai; i++) {
-        cout << "Masukkan nilai ke-" << i + 1 << ": ";
-        cin >> nilai;
-        total += nilai;
+    // Memisahkan angka genap dan ganjil
+    for (int i_136 = 0; i_136 < sizeof(dataArray_136) / sizeof(dataArray_136[0]); ++i_136) {
+        if (dataArray_136[i_136] % 2 == 0) {
+            Afi_136.push_back(dataArray_136[i_136]);
+        } else {
+            IF11D_136.push_back(dataArray_136[i_136]);
+        }
     }
 
-    return static_cast<float>(total) / jumlahNilai;
-}
+    // Menampilkan hasil
+    cout << "Data Array   :";
+    for (int i_136 = 0; i_136 < sizeof(dataArray_136) / sizeof(dataArray_136[0]); ++i_136) {
+        cout << " " << dataArray_136[i_136];
+    }
+    cout << endl;
 
-// Fungsi utama
-int main() {
-    int jumlahNilai;
+    cout << "Nomor Genap  :";
+    for (int i_136 = 0; i_136 < Afi_136.size(); ++i_136) {
+        cout << " " << Afi_136[i_136];
+        if (i_136 < Afi_136.size() - 1) {
+            cout << ",";
+        }
+    }
+    cout << endl;
 
-    cout << "Program Menghitung Rata-Rata Nilai\n";
-    cout << "---------------------------------\n";
-
-    // Input jumlah nilai dari pengguna
-    cout << "Masukkan jumlah nilai: ";
-    cin >> jumlahNilai;
-
-    // Memanggil fungsi hitungRataRata dan menampilkan hasil
-    float rataRata = hitungRataRata(jumlahNilai);
-    cout << "Rata-rata nilai adalah: " << rataRata;
+    cout << "Nomor Ganjil :";
+    for (int i_136 = 0; i_136 < IF11D_136.size(); ++i_136) {
+        cout << " " << IF11D_136[i_136];
+        if (i_136 < IF11D_136.size() - 1) {
+            cout << ",";
+        }
+    }
+    cout << endl;
 
     return 0;
 }
-
+'''
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan01/Unguided%201%20tipe%20data.PNG?raw=true)
 

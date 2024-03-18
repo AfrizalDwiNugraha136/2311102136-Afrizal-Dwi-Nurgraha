@@ -66,46 +66,55 @@ Misal : int A [3][4][2];
 
 Kode di atas adalah program C++ yang melakukan operasi aritmatika berdasarkan input pengguna. Ini dimulai dengan mendeklarasikan variabel untuk sebuah operator (op), dua operan (num1 dan num2), dan sebuah hasil. Program kemudian meminta pengguna untuk memasukkan operator (+, -, *, /) dan dua operan. Ia menggunakan pernyataan switch untuk menentukan operator yang dimasukkan oleh pengguna dan melakukan operasi aritmatika yang sesuai. Jika operatornya adalah '/', program akan memeriksa apakah pembagi (angka2) adalah nol. Jika ya, ia akan menghitung hasilnya dan menampilkannya menggunakan pernyataan cout. Jika pembaginya bukan nol, pesan kesalahan akan ditampilkan. Terakhir, program mengembalikan 0 untuk menunjukkan eksekusi berhasil.
 
-### 2. Tipe Data Abstrak
+### 1.  Program Input Array Tiga Dimensi
 
-   #include <stdio.h>
-#include <string.h>
-
-// Struct
-struct Mahasiswa
+   #include <iostream> 
+using namespace std;
+// PROGRAM INPUT ARRAY 3 DIMENSI
+int main()
 {
-    char name[50];
-    char address[50];
-    int age;
-};
-
-// Tipe Data Abstrak by Jordan
-
-int main() {
-    // Menggunakan Struct
-    struct Mahasiswa mhs1, mhs2;
-
-    // Mengisi nilai ke struct
-    strcpy(mhs1.name, "Dian");
-    strcpy(mhs1.address, "Mataram");
-    mhs1.age = 22;
-    strcpy(mhs2.name, "Bambang");
-    strcpy(mhs2.address, "Surabaya");
-    mhs2.age = 23;
-
-    // Mencetak isi dari struct
-    printf("## Mahasiswa 1 ##\n");
-    printf("Nama: %s\n", mhs1.name);
-    printf("Alamat: %s\n", mhs1.address);
-    printf("Umur: %d\n", mhs1.age);
-    printf("\n");
-    printf("## Mahasiswa 2 ##\n");
-    printf("Nama: %s\n", mhs2.name);
-    printf("Alamat: %s\n", mhs2.address);
-    printf("Umur: %d\n", mhs2.age);
-
-    return 0;
+ // Deklarasi array 
+ int arr[2][3][3];
+ // Input elemen
+ for (int x = 0; x < 2; x++)
+ {
+    for (int y = 0; y < 3; y++)
+     {
+        for (int z = 0; z < 3; z++)
+         {
+            cout << "Input Array[" << x << "][" << y << "][" << z << "] = ";
+            cin >> arr[x][y][z];
+         }
+      }
+      cout << endl;
+    }
+ // Output Array
+ for (int x = 0; x < 2; x++)
+ {
+    for (int y = 0; y < 3; y++)
+     {
+        for (int z = 0; z < 3; z++)
+         {
+             cout << "Data Array[" << x << "][" << y << "][" << z<< "] = " << arr[x][y][z] << endl;
+         }
+     }
+ }
+ cout << endl;
+ // Tampilan array
+for (int x = 0; x < 2; x++)
+{
+ for (int y = 0; y < 3; y++)
+ {
+    for (int z = 0; z < 3; z++)
+    {
+    cout << arr[x][y][z] << ends;
+    }
+    cout << endl;
+ }
+ cout << endl;
+ }
 }
+
 Kode yang diberikan adalah program C yang mendefinisikan sebuah struct bernama Mahasiswa, yang memiliki tiga field: nama (array karakter berukuran 50), alamat (array karakter lain berukuran 50), dan umur (sebuah bilangan bulat). Program kemudian membuat dua contoh struct, mhs1 dan mhs2, dan memberikan nilai ke bidangnya masing-masing. Terakhir, ia mencetak nilai kolom menggunakan fungsi printf.
 Kode ini menggunakan fungsi strcpy dari pustaka string.h untuk menyalin nilai string ke dalam bidang nama dan alamat struct. Itu juga menggunakan fungsi printf untuk memformat dan mencetak nilai bidang. Program ini mendemonstrasikan cara mendefinisikan dan menggunakan struct di C, serta cara mengakses dan memanipulasi bidangnya.
 

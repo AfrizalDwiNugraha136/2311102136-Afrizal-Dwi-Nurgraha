@@ -67,10 +67,8 @@ int main()
         cout << endl;
     }
 }
+```
 Kode ini menunjukkan program C++ yang menerima array tiga dimensi sebagai input  dan menampilkan data array. Program ini menggunakan loop bersarang untuk masuk dan keluar data array. Setiap elemen dalam array dimasukkan dan ditampilkan berdasarkan harga. Program ini menggunakan tipe data integer (int) untuk array dan menggunakan loop bersarang untuk masuk dan keluar dari data array. Setiap elemen dalam array dimasukkan menggunakan cout dan cin dan setiap elemen dalam array ditampilkan menggunakan cout. Program ini juga menggunakan fungsi endl untuk membuat  baris baru pada output. Untuk menjalankan program ini, Anda harus memiliki kompiler C++ dan memberikan masukan yang diperlukan.
-
-
-
 
 ### 2. Program Mencari Nilai Maksimal pada Array
 
@@ -101,7 +99,7 @@ int main()
     }
     cout << "Nilai maksimum adalah " << maks << " berada di Array ke " << lokasi << endl;
 }
-
+```
 Kode ini menunjukkan program C++ untuk mencari nilai maksimum dalam sebuah array. Program ini menggunakan loop for untuk memasukkan dan mengeluarkan data array. Setiap elemen dalam array dimasukkan menggunakan cout dan cin, dan nilai maksimum yang ditemukan ditampilkan menggunakan cout. Program ini menggunakan tipe data integer  untuk array dan menggunakan loop for untuk masuk dan keluar dari data array. Setiap elemen dalam array dimasukkan menggunakan cout dan cin, dan nilai maksimum yang ditemukan ditampilkan menggunakan cout. Program ini juga menggunakan variabel posisi untuk menyimpan indeks  elemen array dengan nilai terbesar. Untuk menjalankan program ini, Anda harus memiliki kompiler C++ dan memberikan masukan yang diperlukan.
 
 ## Unguided 

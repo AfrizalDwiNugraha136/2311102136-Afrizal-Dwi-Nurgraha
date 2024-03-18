@@ -221,7 +221,101 @@ int main()
 }
 ```
  #### Output:
- ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan02/Unguided%202%20Array.PNG)?raw=true)
+ ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan02/Unguided%202%20Array.PNG?raw=true)
+
+Kode ini menunjukkan program C++ yang menerima array tiga dimensi sebagai input  dan menampilkan data array. Program ini menggunakan loop bersarang untuk masuk dan keluar data array. Setiap elemen dalam array dimasukkan menggunakan cout dan cin dan setiap elemen dalam array ditampilkan menggunakan cout. Program ini menggunakan tipe data integer (int) untuk array dan menggunakan loop bersarang untuk masuk dan keluar dari data array. Setiap elemen dalam array dimasukkan menggunakan cout dan cin dan setiap elemen dalam array ditampilkan menggunakan cout. Program ini juga menggunakan fungsi endl untuk membuat  baris baru pada output. Untuk menjalankan program ini, Anda harus memiliki kompiler C++ dan memberikan masukan yang diperlukan.
+
+### 3. Buatlah program menu untuk mencari nilai maksimum, minimum dan nilai rata – rata dari suatu array dengan input yang dimasukkan oleh user!
+
+```C++
+// LAPRAK 2 : UNGUIDED 3
+// AFRIZAL DWI NUGRAHA
+// 2311102136
+// S1 IF-11-D
+#include <iostream>
+using namespace std;
+
+// Fungsi untuk mencari nilai maksimum
+int Afi136_Maksimum(const int array_136[], int size_136, int& lokasi_136) {
+    int maks_136 = array_136[0];
+    lokasi_136 = 0;
+    for (int i_136 = 1; i_136 < size_136; ++i_136) {
+        if (array_136[i_136] > maks_136) {
+            maks_136 = array_136[i_136];
+            lokasi_136 = i_136;
+        }
+    }
+    return maks_136;
+}
+
+// Fungsi untuk mencari nilai minimum
+int Afi136_Minimum(const int array_136[], int size_136, int& lokasi_136) {
+    int min_136 = array_136[0];
+    lokasi_136 = 0;
+    for (int i_136 = 1; i_136 < size_136; ++i_136) {
+        if (array_136[i_136] < min_136) {
+            min_136 = array_136[i_136];
+            lokasi_136 = i_136;
+        }
+    }
+    return min_136;
+}
+
+// Fungsi untuk mencari nilai rata-rata atau Average
+double Afi136_Average(const int array_136[], int size_136) {
+    int total_136 = 0;
+    for (int i_136 = 0; i_136 < size_136; ++i_136) {
+        total_136 += array_136[i_136];
+    }
+    return static_cast<double>(total_136) / size_136;
+}
+
+int main() {
+    int n_136;
+    cout << "Masukkan panjang array: ";
+    cin >> n_136;
+    
+    int array_136[n_136];
+    cout << "Masukkan " << n_136 << " angka\n";
+    for (int i_136 = 0; i_136 < n_136; ++i_136) {
+        cout << "Array ke-" << i_136 << ": ";
+        cin >> array_136[i_136];
+    }
+
+    int Pilihan_136;
+    int lokasi_136;
+    do {
+        cout << "\nMENU OPERASI ARRAY AFRIZAL DWI NUGRAHA:\n";
+        cout << "1. Cari nilai maksimum\n";
+        cout << "2. Cari nilai minimum\n";
+        cout << "3. Cari nilai rata-rata\n";
+        cout << "4. Keluar\n";
+        cout << "Pilih Nomor: ";
+        cin >> Pilihan_136;
+
+        switch (Pilihan_136) {
+            case 1:
+                cout << "Nilai maksimum adalah: " << Afi136_Maksimum(array_136, n_136, lokasi_136) << " \nberada di Array ke-" << lokasi_136 << endl;
+                break;
+            case 2:
+                cout << "Nilai minimum adalah: " << Afi136_Minimum(array_136, n_136, lokasi_136) << " \nberada di Array ke-" << lokasi_136 << endl;
+                break;
+            case 3:
+                cout << "Nilai rata-rata adalah: " << Afi136_Average(array_136, n_136) << endl;
+                break;
+            case 4:
+                cout << "Terima kasih telah menggunakan program ini!\n";
+                break;
+            default:
+                cout << "Pilihan tidak valid, Silahkan coba lagi menggunakan nomor yang tersedia!\n";
+        }
+    } while (Pilihan_136 != 4);
+    return 0;
+}
+```
+#### Output:
+ ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan02/Unguided%202%20Array.PNG?raw=true)
+
 
  
    

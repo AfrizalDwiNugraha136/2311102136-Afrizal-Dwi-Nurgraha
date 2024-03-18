@@ -15,7 +15,7 @@ Misal : int A [3][4][2];
 
 ## Guided 
 
-### 1.  Tipe Data Primitif
+### 1.  Program Input Array Tiga Dimensi
 
 #include <iostream>
 #include <iomanip>

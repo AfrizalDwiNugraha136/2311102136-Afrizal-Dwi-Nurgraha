@@ -17,53 +17,51 @@ Misal : int A [3][4][2];
 
 ### 1.  Program Input Array Tiga Dimensi
 
-#include <iostream> 
-using namespace std;
+#include <iostream> using namespace std;
 // PROGRAM INPUT ARRAY 3 DIMENSI
 int main()
 {
- // Deklarasi array 
- int arr[2][3][3];
- // Input elemen
- for (int x = 0; x < 2; x++)
- {
-    for (int y = 0; y < 3; y++)
-     {
-        for (int z = 0; z < 3; z++)
-         {
-            cout << "Input Array[" << x << "][" << y << "][" << z << "] = ";
-            cin >> arr[x][y][z];
-         }
-      }
-      cout << endl;
-    }
- // Output Array
- for (int x = 0; x < 2; x++)
- {
-    for (int y = 0; y < 3; y++)
-     {
-        for (int z = 0; z < 3; z++)
-         {
-             cout << "Data Array[" << x << "][" << y << "][" << z<< "] = " << arr[x][y][z] << endl;
-         }
-     }
- }
- cout << endl;
- // Tampilan array
+// Deklarasi array int arr[2][3][3];
+// Input elemen
 for (int x = 0; x < 2; x++)
 {
- for (int y = 0; y < 3; y++)
- {
-    for (int z = 0; z < 3; z++)
-    {
-    cout << arr[x][y][z] << ends;
-    }
-    cout << endl;
- }
- cout << endl;
- }
+for (int y = 0; y < 3; y++)
+{
+for (int z = 0; z < 3; z++)
+{
+cout << "Input Array[" << x << "][" << y << "][" << z << "] = ";
+cin >> arr[x][y][z];
 }
-
+}
+cout << endl;
+}
+// Output Array
+for (int x = 0; x < 2; x++)
+{
+for (int y = 0; y < 3; y++)
+{
+for (int z = 0; z < 3; z++)
+{
+cout << "Data Array[" << x << "][" << y << "][" << z
+<< "] = " << arr[x][y][z] << endl;
+}
+}
+}
+cout << endl;
+// Tampilan array
+for (int x = 0; x < 2; x++)
+{
+for (int y = 0; y < 3; y++)
+{
+for (int z = 0; z < 3; z++)
+{
+cout << arr[x][y][z] << ends;
+}
+cout << endl;
+}
+cout << endl;
+}
+}
 
 Kode di atas adalah program C++ yang melakukan operasi aritmatika berdasarkan input pengguna. Ini dimulai dengan mendeklarasikan variabel untuk sebuah operator (op), dua operan (num1 dan num2), dan sebuah hasil. Program kemudian meminta pengguna untuk memasukkan operator (+, -, *, /) dan dua operan. Ia menggunakan pernyataan switch untuk menentukan operator yang dimasukkan oleh pengguna dan melakukan operasi aritmatika yang sesuai. Jika operatornya adalah '/', program akan memeriksa apakah pembagi (angka2) adalah nol. Jika ya, ia akan menghitung hasilnya dan menampilkannya menggunakan pernyataan cout. Jika pembaginya bukan nol, pesan kesalahan akan ditampilkan. Terakhir, program mengembalikan 0 untuk menunjukkan eksekusi berhasil.
 

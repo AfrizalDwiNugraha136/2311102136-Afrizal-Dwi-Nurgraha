@@ -320,10 +320,15 @@ Kode ini menunjukkan program C++ yang menerima input dari array tiga dimensi, da
 
 ## Kesimpulan
 • Array adalah struktur data  paling dasar dan merupakan jenis variabel yang terdiri dari kumpulan data sejenis yang disusun dalam suatu baris atau dimensi. 
+
 • Array satu dimensi adalah jenis penutup variabel terdiri dari sekumpulan data bertipe sama yang disusun dalam satu baris atau berdimensi.
+
 • Array dua dimensi adalah variabel yang terdiri dari kumpulan array satu dimensi bertipe sama yang disusun dalam baris dan kolom.
+
 • Array multidimensi mirip dengan array satu dimensi dan dua dimensi tetapi memiliki kapasitas memori  lebih besar.
+
 • Array ini digunakan untuk merepresentasikan array dengan  lebih dari dua dimensi atau array dengan lebih dari dua indeks, seperti array tiga dimensi, array empat dimensi, array lima dimensi, dll.
+
 • Program yang menggunakan array dapat digunakan untuk menampilkan output  yang diinginkan, mencari nilai maksimum dalam sebuah array, dan menampilkan nilai rata-rata dari sebuah array.
 
 ## Referensi

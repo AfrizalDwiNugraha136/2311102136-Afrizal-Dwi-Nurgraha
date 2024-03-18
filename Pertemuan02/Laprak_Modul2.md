@@ -163,55 +163,63 @@ int main() {
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan02/Unguided%201%20Array.PNG?raw=true)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode ini menunjukkan program C++ yang memisahkan bilangan genap dan ganjil dalam sebuah array. Program ini menggunakan loop for untuk memasukkan dan mengeluarkan data array. Setiap elemen dalam array dimasukkan menggunakan cout dan cin, dan angka genap dan ganjil ditampilkan menggunakan cout. Program ini menggunakan tipe data integer (int) untuk array dan menggunakan vektor untuk menyimpan bilangan genap dan ganjil. Setiap elemen dalam array dimasukkan menggunakan cout dan cin, dan angka genap dan ganjil ditampilkan menggunakan cout. Program ini juga menggunakan variabel posisi untuk menyimpan indeks  elemen array dengan nilai terbesar. Untuk menjalankan program ini, Anda harus memiliki kompiler C++ dan memberikan masukan yang diperlukan.
 
-### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya!
+### 2. Buatlah program input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
 
+```C++
+// LAPRAK 2 : UNGUIDED 2
+// AFRIZAL DWI NUGRAHA          
+// 2311102136
+// S1 IF-11-D
 #include <iostream>
-#include <string>
-
 using namespace std;
 
-// Struct untuk merepresentasikan informasi penulis buku
-struct Author {
-    string name;
-    int birthYear;
-};
-
-// Class untuk merepresentasikan informasi buku
-class Book {
-public:
-    // Constructor untuk inisialisasi informasi buku
-    Book(string title, Author author, int yearPublished)
-        : title(title), bookAuthor(author), yearPublished(yearPublished) {}
-
-    // Fungsi untuk menampilkan informasi buku
-    void displayInfo() {
-        cout << "Buku: " << title << std::endl;
-        cout << "Penulis: " << bookAuthor.name << std::endl;
-        cout << "Tahun Terbit: " << yearPublished << std::endl;
+// PROGRAM INPUT ARRAY 3 DIMENSI by AFRIZAL DWI NUGRAHA
+int main()
+{
+    // Deklarasi array dengan ukuran 1x3x8
+    int array_136[1][3][8];
+    // Input elemen
+    for (int x_136 = 0; x_136 < 1; x_136++)
+    {
+        for (int y_136 = 0; y_136 < 3; y_136++)
+        {
+            for (int z_136 = 0; z_136 < 8; z_136++)
+            {
+                cout << "Input Array[" << x_136 << "][" << y_136 << "][" << z_136 << "] = ";
+                cin >> array_136[x_136][y_136][z_136];
+            }
+        }
+        cout << endl;
     }
-
-private:
-    // Informasi buku
-    string title;
-    Author bookAuthor;
-    int yearPublished;
-};
-
-int main() {
-    // Membuat objek Author
-    Author author{"John Doe", 1980};
-
-    // Membuat objek Book menggunakan struct Author sebagai bagian dari class
-    Book book1("Pemrograman C++", author, 2022);
-
-    // Menampilkan informasi buku
-    book1.displayInfo();
-
-    return 0;
+    // Output Array
+    for (int x_136 = 0; x_136 < 1; x_136++)
+    {
+        for (int y_136 = 0; y_136 < 3; y_136++)
+        {
+            for (int z_136 = 0; z_136 < 8; z_136++)
+            {
+                cout << "Data Array[" << x_136 << "][" << y_136 << "][" << z_136 << "] = " << array_136[x_136][y_136][z_136] << endl;
+            }
+        }
+    }
+    cout << endl;
+    // Tampilan array
+    for (int x_136 = 0; x_136 < 1; x_136++)
+    {
+        for (int y_136 = 0; y_136 < 3; y_136++)
+        {
+            for (int z_136 = 0; z_136 < 8; z_136++)
+            {
+                cout << array_136[x_136][y_136][z_136] << ends;
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
 }
-
+```
  #### Output:
  
    

@@ -17,10 +17,9 @@ Misal : int A [3][4][2];
 
 ### 1.  Program Input Array Tiga Dimensi
 
+```C++
 #include <iostream>
-
 using namespace std;
-
 // Program input array 3 dimensi
 int main()
 {
@@ -73,11 +72,10 @@ Kode ini menunjukkan program C++ yang menerima array tiga dimensi sebagai input 
 
 ### 2. Program Mencari Nilai Maksimal pada Array
 
+```C++
 #include <iostream>
 using namespace std;
-
 // Program Mencari Nilai Maksimal pada Array
-
 int main()
 {
     int maks, a, i = 1, lokasi;

@@ -314,14 +314,17 @@ int main() {
 }
 ```
 #### Output:
- ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan02/Unguided%202%20Array.PNG?raw=true)
+ ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan02/Unguided%203%20Array.PNG?raw=true)
 
-
- 
-   
+Kode ini menunjukkan program C++ yang menerima input dari array tiga dimensi, dan kode ini menunjukkan program C++ yang menyediakan fungsi untuk mencari nilai maksimum, nilai minimum, dan nilai rata-rata dalam sebuah array. Program ini menggunakan loop for untuk memasukkan dan mengeluarkan data array. Setiap elemen dalam array dimasukkan menggunakan cout dan cin, dan nilai maksimum, minimum, dan rata-rata ditampilkan menggunakan cout. Program ini menggunakan tipe data integer (int) untuk array dan menggunakan fungsi untuk menghitung nilai maksimum, minimum, dan rata-rata. Setiap elemen dalam array dimasukkan menggunakan cout dan cin, dan nilai maksimum, minimum, dan rata-rata ditampilkan menggunakan cout. Program ini juga menggunakan kotak sakelar untuk menampilkan menu operasi tabel dan menampilkan hasil operasi yang dipilih. Untuk menjalankan program ini, Anda harus memiliki kompiler C++ dan memberikan masukan yang diperlukan.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+• Array adalah struktur data  paling dasar dan merupakan jenis variabel yang terdiri dari kumpulan data sejenis yang disusun dalam suatu baris atau dimensi. 
+• Array satu dimensi adalah jenis penutup variabel terdiri dari sekumpulan data bertipe sama yang disusun dalam satu baris atau berdimensi.
+• Array dua dimensi adalah variabel yang terdiri dari kumpulan array satu dimensi bertipe sama yang disusun dalam baris dan kolom.
+• Array multidimensi mirip dengan array satu dimensi dan dua dimensi tetapi memiliki kapasitas memori  lebih besar.
+• Array ini digunakan untuk merepresentasikan array dengan  lebih dari dua dimensi atau array dengan lebih dari dua indeks, seperti array tiga dimensi, array empat dimensi, array lima dimensi, dll.
+• Program yang menggunakan array dapat digunakan untuk menampilkan output  yang diinginkan, mencari nilai maksimum dalam sebuah array, dan menampilkan nilai rata-rata dari sebuah array.
 
 ## Referensi
 [1] MA Pratama - 2020 - osf.io

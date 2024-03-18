@@ -107,7 +107,7 @@ Kode ini menunjukkan program C++ untuk mencari nilai maksimum dalam sebuah array
 ### 1. Buatlah program untuk menampilkan output seperti berikut dengan data yang diinputkan oleh user!
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan02/p.jpg?raw=true)
 
-'''C++
+```C++
 // LAPRAK 2 : UNGUIDED 1
 // AFRIZAL DWI NUGRAHA
 // 2311102136

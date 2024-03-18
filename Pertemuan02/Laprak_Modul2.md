@@ -3,7 +3,12 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+• Array adalah  struktur yang terdiri dari sejumlah elemen tertentu dengan tipe data yang sama. Elemen-elemen array disusun secara berurutan dalam memori komputer. Semua elemen dalam array memiliki tipe yang sama. Array cocok untuk mengatur kumpulan data homogen yang ukuran atau jumlah maksimum elemennya diketahui sejak awal. Seragam artinya setiap elemen dalam array tertentu harus mempunyai tipe data yang sama.
+• Array satu dimensi adalah kumpulan elemen identik yang disusun dalam satu baris, tetapi isi  elemen tersebut bisa berbeda. Bisa juga disebut  vektor yang mendeskripsikan data secara berurutan Deklarasi: Data_Type Variable_Name [index] Contoh: int A[5];
+• Array dua dimensi, sering disebut sebagai matriks, merupakan perpanjangan dari  array satu dimensi. Jika array satu dimensi hanya terdiri dari satu baris dengan beberapa kolom elemen, maka array dua dimensi terdiri dari beberapa baris dan beberapa kolom elemen yang bertipe sama. Mendeklarasikan array dua dimensi hampir sama dengan mendeklarasikan array satu dimensi, hanya saja array tersebut merupakan array dua dimensi.
+• Array Tiga Dimensi Array tiga dimensi digunakan untuk mengelola data dalam bentuk 3 dimensi atau tiga sisi. 
+Deklarasi : Type_Data Nama_Variabel [index1] [ndex2] [index3]; 
+Misal : int A [3][4][2];
 
 ## Guided 
 
@@ -224,4 +229,4 @@ int main() {
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] MA Pratama - 2020 - osf.io

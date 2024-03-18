@@ -105,7 +105,7 @@ Kode ini menunjukkan program C++ untuk mencari nilai maksimum dalam sebuah array
 ## Unguided 
 
 ### 1. Buatlah program untuk menampilkan output seperti berikut dengan data yang diinputkan oleh user!
-![Screenshot Soal Unguided 1](SoalUnguided1.png)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan01/Unguided%201%20tipe%20data.PNG?raw=true)
 
 '''C++
 // LAPRAK 2 : UNGUIDED 1

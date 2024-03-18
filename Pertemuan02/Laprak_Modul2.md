@@ -18,7 +18,9 @@ Misal : int A [3][4][2];
 ### 1.  Program Input Array Tiga Dimensi
 
 #include <iostream>
+
 using namespace std;
+
 // Program input array 3 dimensi
 int main()
 {

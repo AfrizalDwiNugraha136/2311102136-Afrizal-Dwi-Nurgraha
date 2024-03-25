@@ -482,7 +482,7 @@ int main() {
         }
     }
 
-    return 0;M
+    return 0;
 }
 ```
 Kelas node: Mendefinisikan struktur node dengan tiga properti yaitu data sebagai nilai yang disimpan, yang pertama adalah penunjuk ke node sebelumnya,dan yang berikutnya adalah penunjuk ke node berikutnya.

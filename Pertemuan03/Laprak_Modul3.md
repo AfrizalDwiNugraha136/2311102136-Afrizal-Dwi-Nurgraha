@@ -6,7 +6,7 @@ Linked List dan Double Linked List adalah dua jenis struktur data yang digunakan
 
 1. Linked List  : Linked List adalah  struktur data linier yang terbentuk secara dinamis.Elemen Linked List disimpan sebagai node, yang terdiri dari dua elemen anak: bagian data  menyimpan elemen, dan bagian berikutnya menyimpan link ke node berikutnya. Linked List terbentuk ketika  banyak node dihubungkan bersama dan membentuk sebuah rantai. Setiap node menunjuk ke node berikutnya secara berurutan. Node pertama  selalu digunakan sebagai referensi ketika melintasi daftar yang disebut HEAD, sedangkan node terakhir akan menunjuk ke NULL.
 
-2. Double Linked List : Double Linked List adalah varian dari Linked List, menggunakan pointer berikutnya dan sebelumnya yang masing-       masing menunjuk ke node berikutnya dan sebelumnya. Double Linked List dapat digunakan untuk berpindah dari node pertama ke node          terakhir atau sebaliknya, yang lebih efisien daripada Linked List hanya dengan penunjuk berikutnya.
+2. Double Linked List : Double Linked List adalah varian dari Linked List, menggunakan pointer berikutnya dan sebelumnya yang masing- masing menunjuk ke node berikutnya dan sebelumnya. Double Linked List dapat digunakan untuk berpindah dari node pertama ke node terakhir atau sebaliknya, yang lebih efisien daripada Linked List hanya dengan penunjuk berikutnya.
 
 Double Linked List dapat digunakan untuk mengurutkan data, seperti yang telah dilakukan pada artikel “Menerapkan dan Menganalisis Penyortiran DDouble Linked List. Double Linked List juga dapat digunakan dalam sistem komunikasi, seperti halnya dalam artikel "Design of buffered double linked list for LEO satelit beam-hopping forwarding", yang menggunakan dDouble Linked List. kebijakan Double Linked List untuk transmisi data antara satelit dan pengguna dalam sistem beam-hopping LEO 
 
@@ -482,39 +482,19 @@ int main() {
         }
     }
 
-    return 0;
+    return 0;M
 }
 ```
-Kode yang diberikan adalah program C yang mendefinisikan sebuah struct bernama Mahasiswa, yang memiliki tiga field: nama (array karakter berukuran 50), alamat (array karakter lain berukuran 50), dan umur (sebuah bilangan bulat). Program kemudian membuat dua contoh struct, mhs1 dan mhs2, dan memberikan nilai ke bidangnya masing-masing. Terakhir, ia mencetak nilai kolom menggunakan fungsi printf.
-Kode ini menggunakan fungsi strcpy dari pustaka string.h untuk menyalin nilai string ke dalam bidang nama dan alamat struct. Itu juga menggunakan fungsi printf untuk memformat dan mencetak nilai bidang. Program ini mendemonstrasikan cara mendefinisikan dan menggunakan struct di C, serta cara mengakses dan memanipulasi bidangnya.
+Kelas node: Mendefinisikan struktur node dengan tiga properti yaitu data sebagai nilai yang disimpan, yang pertama adalah penunjuk ke node sebelumnya,dan yang berikutnya adalah penunjuk ke node berikutnya.
+- Kelas DoublyLinkedList: Mendefinisikan daftar tertaut ganda dengan dua penunjuk, yaitu kepala ke simpul pertama dan ekor ke simpul terakhir.</br>
+- Kelas ini memiliki fungsi berikut: push(int data): Menambahkan data baru ke awal daftar tertaut.</br>
+- pop(): Menghapus data dari awal daftar tertaut.</br>
+- Pembaruan (int oldData, int newData): Mengganti nilai data yang  ada dengan nilai baru.</br>
+- deleteAll(): Menghapus semua data dari daftar tertaut.</br>
+- display(): Menampilkan konten daftar tertaut.</br>
+- Fungsi utama: Dalam fungsi main(), program membuat objek dari kelas DoublyLinkedList dan kemudian menampilkan menu operasi yang dapat dilakukan pada daftar tertaut.</br>
+ Pengguna diminta untuk memilih operasi yang diinginkan dan program akan melakukan operasi  sesuai dengan pilihan pengguna.
 
-### 3. Tipe Data Koleksi
-
-#include <iostream>
-#include <array>
-using namespace std;
-
-// Tipe Data Koleksi by Jordan
-
-int main() {
-    // Deklarasi dan inisialisasi array
-    int nilai[5];
-    nilai[0] = 23;
-    nilai[1] = 50;
-    nilai[2] = 34;
-    nilai[3] = 78;
-    nilai[4] = 90;
-
-    // Mencetak array dengan tab
-    cout << "Isi array pertama : " << nilai[0] << endl;
-    cout << "Isi array kedua : " << nilai[1] << endl;
-    cout << "Isi array ketiga : " << nilai[2] << endl;
-    cout << "Isi array keempat : " << nilai[3] << endl;
-    cout << "Isi array kelima : " << nilai[4] << endl;
-
-    return 0;
-}
-Kode yang diberikan adalah program C++ sederhana yang mendeklarasikan dan menginisialisasi array bilangan bulat yang disebut "nilai". Ia kemudian mencetak nilai setiap elemen dalam array menggunakan pernyataan "cout". Outputnya akan menampilkan nilai elemen array sesuai urutan penetapannya, dipisahkan oleh baris baru.
 
 ## Unguided 
 

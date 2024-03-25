@@ -666,24 +666,11 @@ int main() {
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
-### 2. odifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama Produk dan Harga. </br>Case:</br> ㅤ1. Tambahkan produk Azarine dengan harga 65000 diantara Somethinc dan Skintific</br> ㅤ2. Hapus produk Wardah</br> ㅤ3. Update produk Hanasui menjadi Cleora dengan harga 55000</br> ㅤ4. Tampilkan menu, di mana tampilan akhirnya akan menjadi seperti dibawah ini:
-Toko Skincare Purwokerto
-1. Tambah Data
-2. Hapus Data
-3. Update Data
-4. Tambah Data Urutan Tertentu
-5. Hapus Data Urutan Tertentu
-6. Hapus Seluruh Data
-7. Tampilkan Data
-8. Exit
-Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah
-ini :
-Nama Produk Harga
-Originote 60.000
-Somethinc 150.000
-Azarine 65.000
-Skintific 100.000
-Cleora 55.000
+### 2. odifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama Produk dan Harga. </br>Case:</br> ㅤ1. Tambahkan produk Azarine dengan harga 65000 diantara Somethinc dan Skintific</br> ㅤ2. Hapus produk Wardah</br> ㅤ3. Update produk Hanasui menjadi Cleora dengan harga 55000</br> ㅤ4. Tampilkan menu, di mana tampilan akhirnya akan menjadi seperti dibawah ini: Toko Skincare Purwokerto 1. Tambah Data 2. Hapus Data 3. Update Data 3. Update Data 4. Tambah Data Urutan Tertentu 5. Hapus Data Urutan Tertentu 6. Hapus Seluruh Data 7. Tampilkan Data 7. Tampilkan Data 8. Exit Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah ini :
+
+
+
+
 
 ```C++
 

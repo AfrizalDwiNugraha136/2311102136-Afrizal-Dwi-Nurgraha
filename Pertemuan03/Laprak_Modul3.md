@@ -662,7 +662,7 @@ int main() {
 ```
 
 #### Output:
-![SS](.Pertemuan03/Unguided 1 Link.PNG?raw=true)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan03/Unguided%201%20Link.PNG?raw=true)
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 

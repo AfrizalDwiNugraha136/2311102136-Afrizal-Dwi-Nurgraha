@@ -883,10 +883,33 @@ int main() {
  #### Output:
  ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan03/Unguided%202%20Link.PNG?raw=true)
  ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan03/Unguided%202(1)%20Link.PNG?raw=true)
+ 
+Program di atas adalah implementasi daftar tertaut ganda yang dimodifikasi untuk menambahkan operasi penambahan data dalam urutan tertentu, menghapus data, memperbarui data, menambahkan data  antara dua node tertentu, menghapus semua kedua data dan menampilkan semua data di toko  toko skincare.
+
+Berikut  penjelasan singkat programnya: 
+1. Struktur node: Mendefinisikan struktur node dengan dua properti, yaitu nama produk sebagai string untuk menyimpan nama produk dan harga sebagai ganda untuk Menyimpan harga produk.vSelain itu, ada dua pointer: prev  menunjuk ke node sebelumnya dan next  menunjuk ke node berikutnya dalam daftar tertaut.
    
+2. Class DoubleLinkedList: Mendefinisikan kelas untuk menangani daftar LinkedList.
+-Class ini mempunyai fungsi sebagai berikut: addData(nama string, harga ganda): Menambahkan data ke awal LinkedList.</br>
+- deleteData(string nama): Menghapus node dengan nama produk tertentu dari LinkedList.</br>
+-updateData(string name, string newName, double newPrice): Memperbarui node data  dengan nama produk yang ditentukan.</br>
+- addDataCertainSequence(stringname, doubleprice, stringnameAfter): Menambahkan data dalam urutan yang ditentukan setelah node dengan nama produk yang ditentukan.</br>
+- showData(): Menampilkan semua data dalam LinkedList.</br>
+- deleteAllData(): Menghapus semua data dari LinkedList.</br>
+
+ 3. Fungsi utama: Dalam fungsi main(), program membuat objek class DoubleLinkedList dan kemudian melakukan operasi yang diperlukan dalam studi kasus. Pengguna dapat memilih berbagai operasi yang tersedia melalui menu yang ditampilkan di layar seperti menambah data, menghapus data, memperbarui data, menambah data dalam urutan tertentu, menghapus semua data dan Menampilkan semua data. Program ini memberi pengguna kemampuan untuk mengelola data produk perawatan kulit di dalam  toko secara fleksibel dan efisien menggunakan struktur data daftar tertaut ganda.
+
+
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+1. Daftar tertaut tunggal (SLL) dan daftar tertaut ganda (DLL) adalah dua jenis daftar tertaut yang berbeda dalam cara mereka menggunakan pointer. SLL hanya memiliki penunjuk berikutnya, sedangkan DLL memiliki penunjuk berikutnya dan penunjuk sebelumnya.
+
+2. SLL lebih hemat memori dibandingkan DLL karena setiap node hanya memerlukan satu pointer. SLL juga lebih efisien dalam menambah dan menghapus node di awal atau akhir daftar.
+   
+3.DLL memungkinkan operasi penghapusan dan penambahan node pada node mana pun, sehingga sangat berguna untuk mengimplementasikan algoritma yang memerlukan operasi tersebut. DLL juga memudahkan navigasi daftar dari depan (head) dan belakang (tail).
+
+4.SLL dan DLL dapat digunakan untuk menyimpan data seperti nama dan umur siswa, serta data tentang produk dan harga di toko toko skincare.
+
 
 ## Referensi
 [1] https://www.semanticscholar.org/paper/Artikel-Double-Linked-List-Circulate-Nugraha/db3440ea805484595b638fa29423795f4f903178

@@ -664,7 +664,22 @@ int main() {
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan03/Unguided%201%20Link.PNG?raw=true)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program di atas merupakan implementasi dari daftar tertaut non-lingkaran di C++.
+ Berikut  penjelasan singkat programnya:
+1. Struktur Node: Mendefinisikan struktur node yang mempunyai dua properti yaitu name sebagai string untuk menyimpan nama dan age sebagai bilangan bulat untuk menyimpan umur. Selain itu, ada pointer berikutnya yang menunjuk ke node berikutnya dalam Linked List.
+   
+2. Class LinkedList: Mendefinisikan kelas untuk menangani daftar tertaut.
+ - class ini mempunyai fungsi sebagai berikut: InsertFront(nama string, usia int): Menambahkan data ke awal Linked List.</br>
+ - InsertBack(nama string, usia int): Tambahkan data ke akhir Linked List.</br>
+ - InsertBetween(string name, int age, string prevName, string nextName): Menggabungkan data  antara dua node yang ditentukan dalam Linked List.</br>
+ - Hapus (nama string): Menghapus node dengan nama tertentu dari Linked List.</br>
+ - edit(string nama, string newName, int newAge): Edit data node dengan nama yang ditentukan.</br>
+ - display(): Menampilkan semua data dalam Linked List.</br>
+
+3. Fungsi utama: Dalam fungsi main(), program membuat objek  kelas LinkedList  kemudian melakukan operasi yang diperlukan dalam studi kasus.Setelah menyelesaikan operasi, semua data dalam daftar tertaut akan ditampilkan.
+ Program ini memungkinkan pengguna untuk menyisipkan, menghapus, mengubah dan menampilkan data dalam daftar tertaut sesuai  kebutuhan. Implementasi ini menggunakan struktur data linked list untuk pengelolaan data yang sangat fleksibel dan efisien.
+
+
 
 ### 2. odifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama Produk dan Harga. </br>Case:</br> ㅤ1. Tambahkan produk Azarine dengan harga 65000 diantara Somethinc dan Skintific</br> ㅤ2. Hapus produk Wardah</br> ㅤ3. Update produk Hanasui menjadi Cleora dengan harga 55000</br> ㅤ4. Tampilkan menu, di mana tampilan akhirnya akan menjadi seperti dibawah ini: Toko Skincare Purwokerto 1. Tambah Data 2. Hapus Data 3. Update Data 3. Update Data 4. Tambah Data Urutan Tertentu 5. Hapus Data Urutan Tertentu 6. Hapus Seluruh Data 7. Tampilkan Data 8. Exit Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah ini : Nama Produk Harga Somethinc 150.000 Originote 60.000 Skintific 100.000 Cleora 55.000
 
@@ -866,7 +881,8 @@ int main() {
 
 ```
  #### Output:
- 
+ ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan03/Unguided%201%20Link.PNG?raw=true)
+ ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan03/Unguided%201%20Link.PNG?raw=true)
    
 
 ## Kesimpulan

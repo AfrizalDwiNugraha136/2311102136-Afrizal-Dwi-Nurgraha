@@ -493,8 +493,7 @@ Kelas node: Mendefinisikan struktur node dengan tiga properti yaitu data sebagai
 - deleteAll(): Menghapus semua data dari daftar tertaut.</br>
 - display(): Menampilkan konten daftar tertaut.</br>
 - Fungsi utama: Dalam fungsi main(), program membuat objek dari kelas DoublyLinkedList dan kemudian menampilkan menu operasi yang dapat dilakukan pada daftar tertaut.</br>
- Pengguna diminta untuk memilih operasi yang diinginkan dan program akan melakukan operasi  sesuai dengan pilihan pengguna.
-
+<p> Pengguna diminta untuk memilih operasi yang diinginkan dan program akan melakukan operasi  sesuai dengan pilihan pengguna.<p>
 
 ## Unguided 
 

@@ -308,20 +308,21 @@ int main() {
 Program di atas adalah implementasi dari daftar non-lingkaran tertaut tunggal di C++.
 Berikut  penjelasan singkat masing-masing fungsi dan cara kerja program: Struktur Node: Mendefinisikan struktur node yang memiliki dua properti, yaitu data sebagai nilai yang disimpan dan kemudian penunjuk ke node berikutnya.
  - init(): Inisialisasi head dan tail ke NULL.</br>
- isEmpty(): Memeriksa apakah daftar tertaut kosong.
- InsertFront(int value): Menambahkan node baru ke awal daftar tertaut.
- InsertBack(int value): Tambahkan node baru ke akhir daftar tertaut.
- HitungList(): Menghitung jumlah node dalam daftar tertaut.
- InsertMiddle(int data, int location): Menambahkan node baru ke tengah daftar tertaut pada posisi yang ditentukan.
- RemoveFront(): Menghapus node pertama dari daftar tertaut.
- deleteBack(): Menghapus node terakhir dari daftar tertaut.
- deleteMiddle(int location): Hapus node di tengah daftar link pada lokasi yang ditentukan.
- ChangeFront(int data): Mengubah nilai data pada node pertama dari daftar tertaut.
- ChangeMiddle(int data, int location): Mengubah nilai data pada node di tengah daftar tertaut di lokasi yang ditentukan.
- ChangeBack(int data): Mengubah nilai data pada node terakhir dari daftar tertaut.
- clearList(): Menghapus semua isi daftar tertaut.
- show(): Menampilkan konten daftar tertaut.
- Program kemudian menguji fungsi-fungsi ini menggunakan berbagai operasi, seperti menambah, menghapus, dan mengubah data dalam daftar tertaut.
+ - isEmpty(): Memeriksa apakah daftar tertaut kosong.</br>
+ - isEmpty(): Memeriksa apakah daftar tertaut kosong.</br>
+ - InsertFront(int value): Menambahkan node baru ke awal daftar tertaut.</br>
+ - InsertBack(int value): Tambahkan node baru ke akhir daftar tertaut.</br>
+ - HitungList(): Menghitung jumlah node dalam daftar tertaut.</br>
+ - InsertMiddle(int data, int location): Menambahkan node baru ke tengah daftar tertaut pada posisi yang ditentukan.</br>
+ - RemoveFront(): Menghapus node pertama dari daftar tertaut.</br>
+ - deleteBack(): Menghapus node terakhir dari daftar tertaut.</br>
+ - deleteMiddle(int location): Hapus node di tengah daftar link pada lokasi yang ditentukan.</br>
+ - ChangeFront(int data): Mengubah nilai data pada node pertama dari daftar tertaut.</br>
+ - ChangeMiddle(int data, int location): Mengubah nilai data pada node di tengah daftar tertaut di lokasi yang ditentukan.</br>
+ - ChangeBack(int data): Mengubah nilai data pada node terakhir dari daftar tertaut.</br>
+ - clearList(): Menghapus semua isi daftar tertaut.</br>
+ - show(): Menampilkan konten daftar tertaut.</br>
+<p> Program kemudian menguji fungsi-fungsi ini menggunakan berbagai operasi, seperti menambah, menghapus, dan mengubah data dalam daftar tertaut.<p>
 
 
 

@@ -307,7 +307,7 @@ int main() {
 ```
 Program di atas adalah implementasi dari daftar non-lingkaran tertaut tunggal di C++.
 Berikut  penjelasan singkat masing-masing fungsi dan cara kerja program: Struktur Node: Mendefinisikan struktur node yang memiliki dua properti, yaitu data sebagai nilai yang disimpan dan kemudian penunjuk ke node berikutnya.
- init(): Inisialisasi head dan tail ke NULL.
+ - init(): Inisialisasi head dan tail ke NULL.</br>
  isEmpty(): Memeriksa apakah daftar tertaut kosong.
  InsertFront(int value): Menambahkan node baru ke awal daftar tertaut.
  InsertBack(int value): Tambahkan node baru ke akhir daftar tertaut.

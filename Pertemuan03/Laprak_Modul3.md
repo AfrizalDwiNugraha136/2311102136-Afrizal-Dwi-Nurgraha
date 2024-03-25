@@ -10,57 +10,301 @@ Linked List dan Double Linked List adalah dua jenis struktur data yang digunakan
 
 Double Linked List dapat digunakan untuk mengurutkan data, seperti yang telah dilakukan pada artikel “Menerapkan dan Menganalisis Penyortiran DDouble Linked List. Double Linked List juga dapat digunakan dalam sistem komunikasi, seperti halnya dalam artikel "Design of buffered double linked list for LEO satelit beam-hopping forwarding", yang menggunakan dDouble Linked List. kebijakan Double Linked List untuk transmisi data antara satelit dan pengguna dalam sistem beam-hopping LEO 
 
-
-
-
-
-
 ## Guided 
 
-### 1.  Tipe Data Primitif
+### 1.  Latihan Single Linked List
+
+```C++
 
 #include <iostream>
-#include <iomanip>
-
 using namespace std;
 
-// Tipe Data Primitif 
+///PROGRAM SINGLE LINKED LIST NON-CIRCULAR
+//Deklarasi Struct Node
+struct Node {
+    int data;
+    Node* next;
+};
 
-int main(){
-    char op;
-    float num1, num2;
+Node* head;
+Node* tail;
 
-    cout << "Enter operator (+, -, *, /): ";
-    cin >> op;
+//Inisialisasi Node
+void init() {
+    head = NULL;
+    tail = NULL;
+}
 
-    cout << "Enter two operands: ";
-    cin >> num1 >> num2;
+// Pengecekan
+bool isEmpty() {
+    if (head == NULL)
+        return true;
+    else
+        return false;
+}
 
-    switch (op)
-    {
-    case '+':
-        cout << "Result: " << num1 + num2 << endl;
-        break;
-    case '-':
-        cout << "Result: " << num1 - num2 << endl;
-        break;
-    case '*':
-        cout << "Result: " << num1 * num2 << endl;
-        break;
-    case '/':
-        if (num2 == 0) {
-            cout << "Result: " << fixed << setprecision(2) << num1 / num2 << endl;
-        } else {
-            cout << "Error!: Division by zero" << endl;
-        }
-        break;
+//Tambah Depan
+void insertDepan(int nilai) {
+    //Buat Node baru
+    Node* baru = new Node;
+    baru->data = nilai;
+    baru->next = NULL;
 
-    default:
-        cout << "Error! operator is not correct" << endl;
-        break;
+    if (isEmpty() == true) {
+        head = tail = baru;
+        tail->next = NULL;
     }
+    else {
+        baru->next = head;
+        head = baru;
+    }
+}
+
+//Tambah Belakang
+void insertBelakang(int nilai) {
+    //Buat Node baru
+    Node* baru = new Node;
+    baru->data = nilai;
+    baru->next = NULL;
+
+    if (isEmpty() == true) {
+        head = tail = baru;
+        tail->next = NULL;
+    }
+    else {
+        tail->next = baru;
+        tail = baru;
+    }
+}
+
+//Hitung Jumlah List
+int hitungList() {
+    Node* hitung;
+    hitung = head;
+    int jumlah = 0;
+
+    while (hitung != NULL) {
+        jumlah++;
+        hitung = hitung->next;
+    }
+
+    return jumlah;
+}
+
+//Tambah Tengah
+void insertTengah(int data, int posisi) {
+    if (posisi < 1 || posisi > hitungList()) {
+        cout << "Posisi diluar jangkauan" << endl;
+    }
+    else if (posisi == 1) {
+        cout << "Posisi bukan posisi tengah" << endl;
+    }
+    else {
+        Node* baru, * bantu;
+        baru = new Node();
+        baru->data = data;
+
+        // tranversing
+        bantu = head;
+        int nomor = 1;
+
+        while (nomor < posisi - 1) {
+            bantu = bantu->next;
+            nomor++;
+        }
+
+        baru->next = bantu->next;
+        bantu->next = baru;
+    }
+}
+
+//Hapus Depan
+void hapusDepan() {
+    Node* hapus;
+
+    if (isEmpty() == false) {
+        if (head->next != NULL) {
+            hapus = head;
+            head = head->next;
+            delete hapus;
+        }
+        else {
+            head = tail = NULL;
+        }
+    }
+    else {
+        cout << "List kosong!" << endl;
+    }
+}
+
+//Hapus Belakang
+void hapusBelakang() {
+    Node* hapus;
+    Node* bantu;
+
+    if (isEmpty() == false) {
+        if (head != tail) {
+            hapus = tail;
+            bantu = head;
+
+            while (bantu->next != tail) {
+                bantu = bantu->next;
+            }
+
+            tail = bantu;
+            tail->next = NULL;
+            delete hapus;
+        }
+        else {
+            head = tail = NULL;
+        }
+    }
+    else {
+        cout << "List kosong!" << endl;
+    }
+}
+
+//Hapus Tengah
+void hapusTengah(int posisi) {
+    Node* hapus, * bantu, * bantu2;
+
+    if (posisi < 1 || posisi > hitungList()) {
+        cout << "Posisi di luar jangkauan" << endl;
+    }
+    else if (posisi == 1) {
+        cout << "Posisi bukan posisi tengah" << endl;
+    }
+    else {
+        int nomor = 1;
+        bantu = head;
+
+        while (nomor <= posisi) {
+            if (nomor == posisi - 1) {
+                bantu2 = bantu;
+            }
+
+            if (nomor == posisi) {
+                hapus = bantu;
+            }
+
+            bantu = bantu->next;
+            nomor++;
+        }
+
+        bantu2->next = bantu;
+        delete hapus;
+    }
+}
+
+//Ubah Depan
+void ubahDepan(int data) {
+    if (isEmpty() == false) {
+        head->data = data;
+    }
+    else {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+//Ubah Tengah
+void ubahTengah(int data, int posisi) {
+    Node* bantu;
+
+    if (isEmpty() == false) {
+        if (posisi < 1 || posisi > hitungList()) {
+            cout << "Posisi di luar jangkauan" << endl;
+        }
+        else if (posisi == 1) {
+            cout << "Posisi bukan posisi tengah" << endl;
+        }
+        else {
+            bantu = head;
+            int nomor = 1;
+
+            while (nomor < posisi) {
+                bantu = bantu->next;
+                nomor++;
+            }
+
+            bantu->data = data;
+        }
+    }
+    else {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+//Ubah Belakang
+void ubahBelakang(int data) {
+    if (isEmpty() == false) {
+        tail->data = data;
+    }
+    else {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+//Hapus List
+void clearList() {
+    Node* bantu, * hapus;
+    bantu = head;
+
+    while (bantu != NULL) {
+        hapus = bantu;
+        bantu = bantu->next;
+        delete hapus;
+    }
+
+    head = tail = NULL;
+    cout << "List berhasil terhapus!" << endl;
+}
+
+//Tampilkan List
+void tampil() {
+    Node* bantu;
+    bantu = head;
+
+    if (isEmpty() == false) {
+        while (bantu != NULL) {
+            cout << bantu->data << ends;
+            bantu = bantu->next;
+        }
+
+        cout << endl;
+    }
+    else {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+int main() {
+    init();
+    insertDepan(3);
+    tampil();
+    insertBelakang(5);
+    tampil();
+    insertDepan(2);
+    tampil();
+    insertDepan(1);
+    tampil();
+    hapusDepan();
+    tampil();
+    hapusBelakang();
+    tampil();
+    insertTengah(7, 2);
+    tampil();
+    hapusTengah(2);
+    tampil();
+    ubahDepan(1);
+    tampil();
+    ubahBelakang(8);
+    tampil();
+    ubahTengah(11, 2);
+    tampil();
+
     return 0;
 }
+```
 Kode di atas adalah program C++ yang melakukan operasi aritmatika berdasarkan input pengguna. Ini dimulai dengan mendeklarasikan variabel untuk sebuah operator (op), dua operan (num1 dan num2), dan sebuah hasil. Program kemudian meminta pengguna untuk memasukkan operator (+, -, *, /) dan dua operan. Ia menggunakan pernyataan switch untuk menentukan operator yang dimasukkan oleh pengguna dan melakukan operasi aritmatika yang sesuai. Jika operatornya adalah '/', program akan memeriksa apakah pembagi (angka2) adalah nol. Jika ya, ia akan menghitung hasilnya dan menampilkannya menggunakan pernyataan cout. Jika pembaginya bukan nol, pesan kesalahan akan ditampilkan. Terakhir, program mengembalikan 0 untuk menunjukkan eksekusi berhasil.
 
 ### 2. Tipe Data Abstrak

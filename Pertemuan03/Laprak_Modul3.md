@@ -234,4 +234,5 @@ int main() {
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] https://www.semanticscholar.org/paper/Artikel-Double-Linked-List-Circulate-Nugraha/db3440ea805484595b638fa29423795f4f903178
+[2] https://www.semanticscholar.org/paper/List-linier(linked-list)-dan-variasinya_struktur-Putra/b242a169720943bde95311642bc51f3f1ee75eec

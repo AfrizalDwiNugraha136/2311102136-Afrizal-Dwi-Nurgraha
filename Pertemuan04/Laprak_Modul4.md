@@ -596,8 +596,7 @@ int main()
     return 0;
 }
 ```
-Kode C++ ini mengimplementasikan Linked list melingkar dengan berbagai operasi seperti menyisipkan di awal, menyisipkan di akhir, menyisipkan di posisi tertentu, menghapus dari awal, menghapus dari akhir, menghapus dari posisi tertentu, menghapus daftar, dan menampilkan daftar.
- Berikut gambaran singkat fungsi utamanya: 
+Kode C++ ini mengimplementasikan Linked list melingkar dengan berbagai operasi seperti menyisipkan di awal, menyisipkan di akhir, menyisipkan di posisi tertentu, menghapus dari awal, menghapus dari akhir, menghapus dari posisi tertentu, menghapus daftar, dan menampilkan daftar. Berikut gambaran singkat fungsi utamanya: 
  -init(): Menginisialisasi penunjuk kepala dan ekor.</br>
  -isEmpty(): Memeriksa apakah daftar kosong.</br>
  -createNode(string data): Membuat node baru dengan data yang diberikan.</br>
@@ -616,7 +615,8 @@ Fungsi main() ini mendemonstrasikan penggunaan fungsi-fungsi ini dengan menyisip
 
 ## Unguided 
 
-### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!
+### 1. Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user. 1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
+
 
 #include <iostream>
 

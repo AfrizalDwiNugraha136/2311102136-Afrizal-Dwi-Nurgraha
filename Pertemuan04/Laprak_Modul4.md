@@ -3,15 +3,15 @@
 
 ## Dasar Teori
 
-LINKED LIST adalah struktur data dinamis yang terdiri dari sekelompok node yang dihubungkan oleh pointer.Mereka dapat diklasifikasikan menjadi dua jenis: daftar tertaut tunggal dan daftar tertaut ganda.Daftar tertaut tunggal  menggunakan satu penunjuk untuk menghubungkan simpul-simpulnya, sedangkan daftar tertaut ganda menggunakan dua penunjuk, satu ke simpul berikutnya dan satu lagi ke simpul sebelumnya.
+Linked list adalah struktur data dinamis yang terdiri dari sekelompok node yang dihubungkan oleh pointer.Mereka dapat diklasifikasikan menjadi dua jenis: Linked list tunggal dan Linked list ganda.Linked list tunggal  menggunakan satu penunjuk untuk menghubungkan simpul-simpulnya, sedangkan Linked list ganda menggunakan dua penunjuk, satu ke simpul berikutnya dan satu lagi ke simpul sebelumnya.
  
- Dalam konteks daftar tertaut, istilah "melingkar" dan "tidak melingkar" mengacu pada struktur daftar.Daftar tertaut melingkar adalah jenis daftar tertaut di mana simpul terakhir dalam daftar tertaut  kembali ke simpul pertama, sehingga menciptakan lingkaran tertutup.Sebaliknya, daftar tertaut  non-lingkaran tidak memiliki karakteristik berikut; Node terakhir tidak mengacu pada node pertama.
+Dalam konteks Linked list, istilah "melingkar" dan "tidak melingkar" mengacu pada struktur daftar.Linked list melingkar adalah jenis dLinked list di mana simpul terakhir dalam Linked list  kembali ke simpul pertama, sehingga menciptakan lingkaran tertutup.Sebaliknya, Linked list  non-lingkaran tidak memiliki karakteristik berikut; Node terakhir tidak mengacu pada node pertama.
   
-Misalnya, dalam daftar tertaut, ada dua varian:  melingkar dan non-lingkaran. Daftar melingkar tertaut tunggal adalah daftar tertaut di mana simpul terakhir menunjuk  ke simpul pertama, membentuk lingkaran tertutup. Sebaliknya, daftar NON CIRCULAR yang tertaut tunggal tidak memiliki fitur ini; Node terakhir tidak mengacu pada node pertama.
+Misalnya, dalam Linked list, ada dua varian:  melingkar dan non-lingkaran. Daftar melingkar tertaut tunggal adalah Linked list di mana simpul terakhir menunjuk  ke simpul pertama, membentuk lingkaran tertutup. Sebaliknya, daftar NON CIRCULAR yang tertaut tunggal tidak memiliki fitur ini; Node terakhir tidak mengacu pada node pertama.
  
-Dalam daftar tertaut ganda, variasi melingkar juga dimungkinkan. Perulangan daftar tertaut ganda adalah daftar tertaut di mana simpul terakhir menunjuk  ke simpul pertama menggunakan penunjuk berikutnya dan sebelumnya, sehingga menciptakan perulangan tertutup.Ini berbeda dengan daftar tertaut ganda non-lingkaran, yang mana simpul terakhir tidak terhubung kembali ke simpul pertama.
+Dalam daftar tertaut ganda, variasi melingkar juga dimungkinkan. Perulangan Linked list ganda adalah Linked list di mana simpul terakhir menunjuk  ke simpul pertama menggunakan penunjuk berikutnya dan sebelumnya, sehingga menciptakan perulangan tertutup.Ini berbeda dengan Linked list ganda non-lingkaran, yang mana simpul terakhir tidak terhubung kembali ke simpul pertama.
  
- Singkatnya, istilah "CIRCULAR" dan "NON CIRCULAR" dalam konteks daftar tertaut mengacu pada struktur daftar.Daftar tertaut melingkar adalah daftar tertaut yang simpul terakhirnya menunjuk  ke simpul pertama, sehingga menciptakan perulangan tertutup, sedangkan daftar tertaut non-lingkaran tidak memiliki fitur ini.
+Singkatnya, istilah "CIRCULAR" dan "NON CIRCULAR" dalam konteks Linked list mengacu pada struktur daftar.Linked list melingkar adalah Linked list yang simpul terakhirnya menunjuk  ke simpul pertama, sehingga menciptakan perulangan tertutup, sedangkan daftar tertaut non-lingkaran tidak memiliki fitur ini.
 
 ## Guided 
 
@@ -308,23 +308,22 @@ int main() {
     return 0;
 }
 ```
-Kode C++ yang disediakan mengimplementasikan daftar tertaut tunggal dengan berbagai fungsi seperti menyisipkan di awal, akhir, dan tengah, menghapus dari awal dan tengah, memodifikasi elemen di awal, akhir, dan tengah, menghapus daftar, dan menampilkan daftar . Berikut rincian fungsinya:
-
--init(): Menginisialisasi daftar tertaut dengan menyetel penunjuk kepala dan ekor ke NULL.</br>
--isEmpty(): Memeriksa apakah daftarnya kosong.</br>
--insertDepan(int nilai): Menyisipkan node di awal daftar.</br>
--insertBelakang(int nilai): Menyisipkan node di akhir daftar.</br>
--hitungList(): Menghitung jumlah node dalam daftar.</br>
--insertTengah(int data, int posisi): Menyisipkan node pada posisi tertentu dalam daftar.</br>
--hapusDepan(): Menghapus node pertama dari daftar.</br>
--hapusTengah(int posisi): Menghapus sebuah node pada posisi tertentu dalam daftar.</br>
--ubahDepan(int data): Memodifikasi data node pertama.</br>
--ubahTengah(int data, int posisi): Memodifikasi data suatu node pada posisi tertentu.</br>
--ubahBelakang(int data): Memodifikasi data node terakhir.</br>
--clearList(): Menghapus semua node dalam daftar.</br>
--tampil(): Menampilkan elemen daftar.</br>
-
-Fungsi ini main()mendemonstrasikan penggunaan fungsi-fungsi ini dengan menyisipkan, menghapus, dan memodifikasi node, lalu menampilkan daftarnya di berbagai titik.
+Kode C++ yang disediakan mengimplementasikan Linked list tunggal dengan berbagai fungsi seperti menyisipkan di awal, akhir dan tengah, menghapus di awal dan tengah, memodifikasi elemen di awal, akhir dan tengah, menghapus daftar dan menampilkan daftar. Berikut rincian fungsinya: 
+ -init(): Menginisialisasi daftar tertaut dengan menyetel penunjuk kepala dan ekor ke NULL.</br>
+ -isEmpty(): Memeriksa apakah daftar kosong.</br>
+ -InsertFront(nilai int): Menyisipkan tombol di awal daftar.</br>
+ -InsertBack(int value): Menyisipkan tombol di akhir daftar.</br>
+ -countList(): Menghitung jumlah node dalam daftar.</br>
+ -InsertMiddle(int data, int location): Menyisipkan node pada posisi yang ditentukan dalam daftar.</br>
+ -RemoveFront(): Menghapus node pertama dari daftar.</br>
+ -deleteCenter(int location): Menghapus sebuah node di lokasi yang ditentukan dalam daftar.</br>
+ -ModifyFront(int data): Memodifikasi data node pertama.</br>
+ -ModifyCenter(int data, int location): Memodifikasi data  node pada lokasi tertentu.</br>
+ -ModifyBack(int data): Memodifikasi data terakhir dari node.</br>
+ -clearList(): Hapus semua node dari daftar.</br>
+ -display(): Menampilkan item daftar.</br>
+ 
+Fungsi main() ini mendemonstrasikan cara menggunakan fungsi-fungsi ini dengan menyisipkan, menghapus, dan memodifikasi node, lalu menampilkan daftarnya pada waktu yang berbeda.
 
 ### 2. Tipe Data Abstrak
 
@@ -597,7 +596,23 @@ int main()
     return 0;
 }
 ```
-Kode yang diberikan adalah program C yang mendefinisikan sebuah struct bernama Mahasiswa, yang memiliki tiga field: nama (array karakter berukuran 50), alamat (array karakter lain berukuran 50), dan umur (sebuah bilangan bulat). Program kemudian membuat dua contoh struct, mhs1 dan mhs2, dan memberikan nilai ke bidangnya masing-masing. Terakhir, ia mencetak nilai kolom menggunakan fungsi printf. Kode ini menggunakan fungsi strcpy dari pustaka string.h untuk menyalin nilai string ke dalam bidang nama dan alamat struct. Itu juga menggunakan fungsi printf untuk memformat dan mencetak nilai bidang. Program ini mendemonstrasikan cara mendefinisikan dan menggunakan struct di C, serta cara mengakses dan memanipulasi bidangnya.
+Kode C++ ini mengimplementasikan Linked list melingkar dengan berbagai operasi seperti menyisipkan di awal, menyisipkan di akhir, menyisipkan di posisi tertentu, menghapus dari awal, menghapus dari akhir, menghapus dari posisi tertentu, menghapus daftar, dan menampilkan daftar.
+ Berikut gambaran singkat fungsi utamanya: 
+ -init(): Menginisialisasi penunjuk kepala dan ekor.</br>
+ -isEmpty(): Memeriksa apakah daftar kosong.</br>
+ -createNode(string data): Membuat node baru dengan data yang diberikan.</br>
+ -InsertFront(string data): Menyisipkan tombol di awal daftar.</br>
+ -InsertBack(string data): Menyisipkan tombol di akhir daftar.</br>
+ -InsertMiddle(data string, lokasi int): Menyisipkan node pada posisi yang ditentukan dalam daftar.</br>
+ -RemoveFront(): Menghapus node dari daftar teratas.</br>
+ -RemoveBack(): Menghapus node dari bagian bawah daftar.</br>
+ -RemoveCenter(int location): Menghapus sebuah node dari lokasi yang ditentukan dalam daftar.</br>
+ -clearList(): Menghapus seluruh daftar.</br>
+ -display(): Menampilkan item daftar.</br>
+ 
+Fungsi main() ini mendemonstrasikan penggunaan fungsi-fungsi ini dengan menyisipkan, menghapus, dan menampilkan elemen dalam berbagai situasi.
+
+
 
 ## Unguided 
 

@@ -3,7 +3,15 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+LINKED LIST adalah struktur data dinamis yang terdiri dari sekelompok node yang dihubungkan oleh pointer.Mereka dapat diklasifikasikan menjadi dua jenis: daftar tertaut tunggal dan daftar tertaut ganda.Daftar tertaut tunggal  menggunakan satu penunjuk untuk menghubungkan simpul-simpulnya, sedangkan daftar tertaut ganda menggunakan dua penunjuk, satu ke simpul berikutnya dan satu lagi ke simpul sebelumnya.
+ 
+ Dalam konteks daftar tertaut, istilah "melingkar" dan "tidak melingkar" mengacu pada struktur daftar.Daftar tertaut melingkar adalah jenis daftar tertaut di mana simpul terakhir dalam daftar tertaut  kembali ke simpul pertama, sehingga menciptakan lingkaran tertutup.Sebaliknya, daftar tertaut  non-lingkaran tidak memiliki karakteristik berikut; Node terakhir tidak mengacu pada node pertama.
+  
+Misalnya, dalam daftar tertaut, ada dua varian:  melingkar dan non-lingkaran. Daftar melingkar tertaut tunggal adalah daftar tertaut di mana simpul terakhir menunjuk  ke simpul pertama, membentuk lingkaran tertutup. Sebaliknya, daftar NON CIRCULAR yang tertaut tunggal tidak memiliki fitur ini; Node terakhir tidak mengacu pada node pertama.
+ 
+Dalam daftar tertaut ganda, variasi melingkar juga dimungkinkan. Perulangan daftar tertaut ganda adalah daftar tertaut di mana simpul terakhir menunjuk  ke simpul pertama menggunakan penunjuk berikutnya dan sebelumnya, sehingga menciptakan perulangan tertutup.Ini berbeda dengan daftar tertaut ganda non-lingkaran, yang mana simpul terakhir tidak terhubung kembali ke simpul pertama.
+ 
+ Singkatnya, istilah "CIRCULAR" dan "NON CIRCULAR" dalam konteks daftar tertaut mengacu pada struktur daftar.Daftar tertaut melingkar adalah daftar tertaut yang simpul terakhirnya menunjuk  ke simpul pertama, sehingga menciptakan perulangan tertutup, sedangkan daftar tertaut non-lingkaran tidak memiliki fitur ini.
 
 ## Guided 
 

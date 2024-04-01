@@ -981,17 +981,17 @@ Program ini menggunakan pendekatan berbasis menu, di mana pengguna diminta  memi
 
 
 ## Kesimpulan
-1. Linked List Non Circular: 
+[1]. Linked List Non Circular:
  -Linked List Non Circular: adalah jenis daftar tertaut yang tidak memiliki simpul akhir,  tidak terhubung ke simpul pertama.</br>
  -Operasi daftar tertaut non-lingkaran mencakup mendeklarasikan simpul, membuat dan menginisialisasi penunjuk kepala dan ekor, memeriksastatus daftar tertaut, menambahkan simpul, menghapus simpul, dan menampilkan data linked list.</br>
  -Dapat digunakan untuk menyimpan data yang hanya perlu diakses satu kali saja, seperti data siswa.</br>
 
-2. Circular Linked List:   
+[2]. Circular Linked List:   
  -Circular Linked List  adalah jenis linked list yang tidak memiliki simpul akhir,  terhubung ke simpul pertama.</br>
  -Operasi daftar tertaut melingkar mencakup mendeklarasikan simpul, membuat dan menginisialisasi penunjuk kepala dan ekor, memeriksa status daftar tertaut, membuat simpul, menambahkan simpul, menghapus simpul, dan menampilkan daftar linked list.</br>
  -Dapat digunakan untuk menyimpan data yang memerlukan akses berulang, seperti playlist, daftar pesan dalam antrian, atau penggunaan memori berulang dalam suatu aplikasi.</br>
 
-3. Penggunaan Linked List Non Circular dan Circular:
+[3]. Penggunaan Linked List Non Circular dan Circular:
  -Linked List Non Circular dan Circular dapat digunakan untuk menyimpan data yang berbeda-beda, bergantung pada kebutuhan aplikasi.</br>
  -Daftar tertaut non-lingkaran  lebih cocok untuk menyimpan data yang memerlukan akses satu kali, sedangkan daftar tertaut melingkar lebih cocok untuk menyimpan data yang memerlukan banyak akses.</br>
 

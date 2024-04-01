@@ -310,19 +310,20 @@ int main() {
 ```
 Kode C++ yang disediakan mengimplementasikan daftar tertaut tunggal dengan berbagai fungsi seperti menyisipkan di awal, akhir, dan tengah, menghapus dari awal dan tengah, memodifikasi elemen di awal, akhir, dan tengah, menghapus daftar, dan menampilkan daftar . Berikut rincian fungsinya:
 
-init(): Menginisialisasi daftar tertaut dengan menyetel penunjuk kepala dan ekor ke NULL.
-isEmpty(): Memeriksa apakah daftarnya kosong.
-insertDepan(int nilai): Menyisipkan node di awal daftar.
-insertBelakang(int nilai): Menyisipkan node di akhir daftar.
-hitungList(): Menghitung jumlah node dalam daftar.
-insertTengah(int data, int posisi): Menyisipkan node pada posisi tertentu dalam daftar.
-hapusDepan(): Menghapus node pertama dari daftar.
-hapusTengah(int posisi): Menghapus sebuah node pada posisi tertentu dalam daftar.
-ubahDepan(int data): Memodifikasi data node pertama.
-ubahTengah(int data, int posisi): Memodifikasi data suatu node pada posisi tertentu.
-ubahBelakang(int data): Memodifikasi data node terakhir.
-clearList(): Menghapus semua node dalam daftar.
-tampil(): Menampilkan elemen daftar.
+-init(): Menginisialisasi daftar tertaut dengan menyetel penunjuk kepala dan ekor ke NULL.</br>
+-isEmpty(): Memeriksa apakah daftarnya kosong.</br>
+-insertDepan(int nilai): Menyisipkan node di awal daftar.</br>
+-insertBelakang(int nilai): Menyisipkan node di akhir daftar.</br>
+-hitungList(): Menghitung jumlah node dalam daftar.</br>
+-insertTengah(int data, int posisi): Menyisipkan node pada posisi tertentu dalam daftar.</br>
+-hapusDepan(): Menghapus node pertama dari daftar.</br>
+-hapusTengah(int posisi): Menghapus sebuah node pada posisi tertentu dalam daftar.</br>
+-ubahDepan(int data): Memodifikasi data node pertama.</br>
+-ubahTengah(int data, int posisi): Memodifikasi data suatu node pada posisi tertentu.</br>
+-ubahBelakang(int data): Memodifikasi data node terakhir.</br>
+-clearList(): Menghapus semua node dalam daftar.</br>
+-tampil(): Menampilkan elemen daftar.</br>
+
 Fungsi ini main()mendemonstrasikan penggunaan fungsi-fungsi ini dengan menyisipkan, menghapus, dan memodifikasi node, lalu menampilkan daftarnya di berbagai titik.
 
 ### 2. Tipe Data Abstrak

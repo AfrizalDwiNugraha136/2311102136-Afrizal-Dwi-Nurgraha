@@ -961,10 +961,39 @@ int main() {
 
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan04/Unguided%201(2)%20Non.PNG?raw=true)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode yang Anda berikan adalah program C++ yang mengimplementasikan daftar tertaut tunggal.Hal ini memungkinkan pengguna untuk melakukan berbagai operasi pada daftar tertaut seperti menambahkan node di awal, menambahkan node di akhir, menambahkan node pada posisi tertentu, memodifikasi node di awal, memodifikasi node di akhir, memodifikasi tombol di lokasi tertentu.lokasi, menghapus node di  depan, menghapus node di akhir, menghapus node di lokasi tertentu, melihat data yang disimpan dalam Linked List, dan menghapus seluruh daftar tertaut. Di bawah ini adalah ringkasan fungsi utama yang disediakan oleh program ini: 
+
+ -Tambahkan bagian depan: Tambahkan node baru ke awal daftar tertaut.</br>
+ -Tambah Kembali: Menambahkan simpul baru ke akhir daftar tertaut.</br>
+ -Tambah Tengah: Menambahkan simpul baru pada posisi yang ditentukan dalam daftar tautan.</br>
+ -Pengeditan Sebelumnya:  Edit simpul data di bagian atas daftar tertaut.</br>
+ -Edit lagi:  Ubah data node di bagian bawah daftar tertaut.</br>
+ -Memodifikasi antara: Memodifikasi data simpul di lokasi tertentu dalam daftar tertaut.</br>
+ -Hapus Depan: Hapus tombol di bagian atas daftar link.</br>
+ -Kembali Hapus:  Hapus node di bagian bawah daftar link.</br>
+ -Hapus Antara:  Hapus node pada posisi yang ditentukan dalam daftar tautan.</br>
+ -Hapus daftar (Hapus seluruh daftar):  Hapus semua node dari daftar tertaut.</br>
+ -SHOW: Menampilkan semua data yang disimpan dalam daftar tertaut.</br>
+ -EXIT: Keluar dari program.</br>
+ 
+Program ini menggunakan pendekatan berbasis menu, di mana pengguna diminta  memilih operasi yang akan dilakukan pada daftar link.Program terus berjalan hingga pengguna memilih keluar dengan memasukkan “0”.
+
+
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Linked List Non Circular: 
+ -Linked List Non Circular: adalah jenis daftar tertaut yang tidak memiliki simpul akhir,  tidak terhubung ke simpul pertama.</br>
+ -Operasi daftar tertaut non-lingkaran mencakup mendeklarasikan simpul, membuat dan menginisialisasi penunjuk kepala dan ekor, memeriksastatus daftar tertaut, menambahkan simpul, menghapus simpul, dan menampilkan data linked list.</br>
+ -Dapat digunakan untuk menyimpan data yang hanya perlu diakses satu kali saja, seperti data siswa.</br>
+
+Circular Linked List:   
+ -Circular Linked List  adalah jenis linked list yang tidak memiliki simpul akhir,  terhubung ke simpul pertama.</br>
+ -Operasi daftar tertaut melingkar mencakup mendeklarasikan simpul, membuat dan menginisialisasi penunjuk kepala dan ekor, memeriksa status daftar tertaut, membuat simpul, menambahkan simpul, menghapus simpul, dan menampilkan daftar linked list.</br>
+ -Dapat digunakan untuk menyimpan data yang memerlukan akses berulang, seperti playlist, daftar pesan dalam antrian, atau penggunaan memori berulang dalam suatu aplikasi.</br>
+
+Penggunaan Linked List Non Circular dan Circular:
+ -Linked List Non Circular dan Circular dapat digunakan untuk menyimpan data yang berbeda-beda, bergantung pada kebutuhan aplikasi.</br>
+ -Daftar tertaut non-lingkaran  lebih cocok untuk menyimpan data yang memerlukan akses satu kali, sedangkan daftar tertaut melingkar lebih cocok untuk menyimpan data yang memerlukan banyak akses.</br>
 
 ## Referensi
 [1] (https://www.semanticscholar.org/paper/Single-linked-list-Putra/80f629e3fddf788644da84f429a544749a4eefe2)

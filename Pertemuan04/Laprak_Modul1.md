@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul Tipe Data</h1>
+# <h1 align="center">Laporan Praktikum Modul LINKED LIST CIRCULAR DAN NON CIRCULAR</h1>
 # <p align="center">Afrizal Dwi Nugraha-2311102136 </p>
 
 ## Dasar Teori

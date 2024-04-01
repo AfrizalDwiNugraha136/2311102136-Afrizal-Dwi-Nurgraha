@@ -308,7 +308,22 @@ int main() {
     return 0;
 }
 ```
-Kode di atas adalah program C++ yang melakukan operasi aritmatika berdasarkan input pengguna. Ini dimulai dengan mendeklarasikan variabel untuk sebuah operator (op), dua operan (num1 dan num2), dan sebuah hasil. Program kemudian meminta pengguna untuk memasukkan operator (+, -, *, /) dan dua operan. Ia menggunakan pernyataan switch untuk menentukan operator yang dimasukkan oleh pengguna dan melakukan operasi aritmatika yang sesuai. Jika operatornya adalah '/', program akan memeriksa apakah pembagi (angka2) adalah nol. Jika ya, ia akan menghitung hasilnya dan menampilkannya menggunakan pernyataan cout. Jika pembaginya bukan nol, pesan kesalahan akan ditampilkan. Terakhir, program mengembalikan 0 untuk menunjukkan eksekusi berhasil.
+Kode C++ yang disediakan mengimplementasikan daftar tertaut tunggal dengan berbagai fungsi seperti menyisipkan di awal, akhir, dan tengah, menghapus dari awal dan tengah, memodifikasi elemen di awal, akhir, dan tengah, menghapus daftar, dan menampilkan daftar . Berikut rincian fungsinya:
+
+init(): Menginisialisasi daftar tertaut dengan menyetel penunjuk kepala dan ekor ke NULL.
+isEmpty(): Memeriksa apakah daftarnya kosong.
+insertDepan(int nilai): Menyisipkan node di awal daftar.
+insertBelakang(int nilai): Menyisipkan node di akhir daftar.
+hitungList(): Menghitung jumlah node dalam daftar.
+insertTengah(int data, int posisi): Menyisipkan node pada posisi tertentu dalam daftar.
+hapusDepan(): Menghapus node pertama dari daftar.
+hapusTengah(int posisi): Menghapus sebuah node pada posisi tertentu dalam daftar.
+ubahDepan(int data): Memodifikasi data node pertama.
+ubahTengah(int data, int posisi): Memodifikasi data suatu node pada posisi tertentu.
+ubahBelakang(int data): Memodifikasi data node terakhir.
+clearList(): Menghapus semua node dalam daftar.
+tampil(): Menampilkan elemen daftar.
+Fungsi ini main()mendemonstrasikan penggunaan fungsi-fungsi ini dengan menyisipkan, menghapus, dan memodifikasi node, lalu menampilkan daftarnya di berbagai titik.
 
 ### 2. Tipe Data Abstrak
 

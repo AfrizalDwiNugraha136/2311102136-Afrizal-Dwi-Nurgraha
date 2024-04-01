@@ -309,6 +309,7 @@ int main() {
 }
 ```
 Kode C++ yang disediakan mengimplementasikan Linked list tunggal dengan berbagai fungsi seperti menyisipkan di awal, akhir dan tengah, menghapus di awal dan tengah, memodifikasi elemen di awal, akhir dan tengah, menghapus daftar dan menampilkan daftar. Berikut rincian fungsinya: 
+
  -init(): Menginisialisasi daftar tertaut dengan menyetel penunjuk kepala dan ekor ke NULL.</br>
  -isEmpty(): Memeriksa apakah daftar kosong.</br>
  -InsertFront(nilai int): Menyisipkan tombol di awal daftar.</br>
@@ -597,6 +598,7 @@ int main()
 }
 ```
 Kode C++ ini mengimplementasikan Linked list melingkar dengan berbagai operasi seperti menyisipkan di awal, menyisipkan di akhir, menyisipkan di posisi tertentu, menghapus dari awal, menghapus dari akhir, menghapus dari posisi tertentu, menghapus daftar, dan menampilkan daftar. Berikut gambaran singkat fungsi utamanya: 
+
  -init(): Menginisialisasi penunjuk kepala dan ekor.</br>
  -isEmpty(): Memeriksa apakah daftar kosong.</br>
  -createNode(string data): Membuat node baru dengan data yang diberikan.</br>
@@ -961,7 +963,7 @@ int main() {
 
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan04/Unguided%201(2)%20Non.PNG?raw=true)
 
-Kode yang Anda berikan adalah program C++ yang mengimplementasikan daftar tertaut tunggal.Hal ini memungkinkan pengguna untuk melakukan berbagai operasi pada daftar tertaut seperti menambahkan node di awal, menambahkan node di akhir, menambahkan node pada posisi tertentu, memodifikasi node di awal, memodifikasi node di akhir, memodifikasi tombol di lokasi tertentu.lokasi, menghapus node di  depan, menghapus node di akhir, menghapus node di lokasi tertentu, melihat data yang disimpan dalam Linked List, dan menghapus seluruh daftar tertaut. Di bawah ini adalah ringkasan fungsi utama yang disediakan oleh program ini: 
+Kode yang Anda berikan adalah program C++ yang mengimplementasikan daftar tertaut tunggal.Hal ini memungkinkan pengguna untuk melakukan berbagai operasi pada daftar tertaut seperti menambahkan node di awal, menambahkan node di akhir, menambahkan node pada posisitertentu, memodifikasi node di awal, memodifikasi node di akhir, memodifikasi tombol di lokasi tertentu.lokasi, menghapus node di depan,menghapus node di akhir, menghapus node di lokasi tertentu, melihat data yang disimpan dalam Linked List, dan menghapus seluruh daftar tertaut. Di bawah ini adalah ringkasan fungsi utama yang disediakan oleh program ini: 
 
  -Tambahkan bagian depan: Tambahkan node baru ke awal daftar tertaut.</br>
  -Tambah Kembali: Menambahkan simpul baru ke akhir daftar tertaut.</br>

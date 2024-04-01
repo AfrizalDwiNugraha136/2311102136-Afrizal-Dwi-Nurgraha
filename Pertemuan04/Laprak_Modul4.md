@@ -15,122 +15,573 @@ Dalam daftar tertaut ganda, variasi melingkar juga dimungkinkan. Perulangan daft
 
 ## Guided 
 
-### 1.  Tipe Data Primitif
+### 1.  Linked List Non Circular
+
+```C++
 
 #include <iostream>
-#include <iomanip>
-
 using namespace std;
 
-// Tipe Data Primitif 
+///PROGRAM SINGLE LINKED LIST NON-CIRCULAR
+//Deklarasi Struct Node
+struct Node {
+    int data;
+    Node* next;
+};
 
-int main(){
-    char op;
-    float num1, num2;
+Node* head;
+Node* tail;
 
-    cout << "Enter operator (+, -, *, /): ";
-    cin >> op;
+//Inisialisasi Node
+void init() {
+    head = NULL;
+    tail = NULL;
+}
 
-    cout << "Enter two operands: ";
-    cin >> num1 >> num2;
+// Pengecekan
+bool isEmpty() {
+    if (head == NULL)
+        return true;
+    else
+        return false;
+}
 
-    switch (op)
-    {
-    case '+':
-        cout << "Result: " << num1 + num2 << endl;
-        break;
-    case '-':
-        cout << "Result: " << num1 - num2 << endl;
-        break;
-    case '*':
-        cout << "Result: " << num1 * num2 << endl;
-        break;
-    case '/':
-        if (num2 == 0) {
-            cout << "Result: " << fixed << setprecision(2) << num1 / num2 << endl;
-        } else {
-            cout << "Error!: Division by zero" << endl;
-        }
-        break;
+//Tambah Depan
+void insertDepan(int nilai) {
+    //Buat Node baru
+    Node* baru = new Node;
+    baru->data = nilai;
+    baru->next = NULL;
 
-    default:
-        cout << "Error! operator is not correct" << endl;
-        break;
+    if (isEmpty() == true) {
+        head = tail = baru;
+        tail->next = NULL;
     }
+    else {
+        baru->next = head;
+        head = baru;
+    }
+}
+
+//Tambah Belakang
+void insertBelakang(int nilai) {
+    //Buat Node baru
+    Node* baru = new Node;
+    baru->data = nilai;
+    baru->next = NULL;
+
+    if (isEmpty() == true) {
+        head = tail = baru;
+        tail->next = NULL;
+    }
+    else {
+        tail->next = baru;
+        tail = baru;
+    }
+}
+
+//Hitung Jumlah List
+int hitungList() {
+    Node* hitung;
+    hitung = head;
+    int jumlah = 0;
+
+    while (hitung != NULL) {
+        jumlah++;
+        hitung = hitung->next;
+    }
+
+    return jumlah;
+}
+
+//Tambah Tengah
+void insertTengah(int data, int posisi) {
+    if (posisi < 1 || posisi > hitungList()) {
+        cout << "Posisi diluar jangkauan" << endl;
+    }
+    else if (posisi == 1) {
+        cout << "Posisi bukan posisi tengah" << endl;
+    }
+    else {
+        Node* baru, * bantu;
+        baru = new Node();
+        baru->data = data;
+
+        // tranversing
+        bantu = head;
+        int nomor = 1;
+
+        while (nomor < posisi - 1) {
+            bantu = bantu->next;
+            nomor++;
+        }
+
+        baru->next = bantu->next;
+        bantu->next = baru;
+    }
+}
+
+//Hapus Depan
+void hapusDepan() {
+    Node* hapus;
+
+    if (isEmpty() == false) {
+        if (head->next != NULL) {
+            hapus = head;
+            head = head->next;
+            delete hapus;
+        }
+        else {
+            head = tail = NULL;
+        }
+    }
+    else {
+        cout << "List kosong!" << endl;
+    }
+}
+
+//Hapus Belakang
+void hapusBelakang() {
+    Node* hapus;
+    Node* bantu;
+
+    if (isEmpty() == false) {
+        if (head != tail) {
+            hapus = tail;
+            bantu = head;
+
+            while (bantu->next != tail) {
+                bantu = bantu->next;
+            }
+
+            tail = bantu;
+            tail->next = NULL;
+            delete hapus;
+        }
+        else {
+            head = tail = NULL;
+        }
+    }
+    else {
+        cout << "List kosong!" << endl;
+    }
+}
+
+//Hapus Tengah
+void hapusTengah(int posisi) {
+    Node* hapus, * bantu, * bantu2;
+
+    if (posisi < 1 || posisi > hitungList()) {
+        cout << "Posisi di luar jangkauan" << endl;
+    }
+    else if (posisi == 1) {
+        cout << "Posisi bukan posisi tengah" << endl;
+    }
+    else {
+        int nomor = 1;
+        bantu = head;
+
+        while (nomor <= posisi) {
+            if (nomor == posisi - 1) {
+                bantu2 = bantu;
+            }
+
+            if (nomor == posisi) {
+                hapus = bantu;
+            }
+
+            bantu = bantu->next;
+            nomor++;
+        }
+
+        bantu2->next = bantu;
+        delete hapus;
+    }
+}
+
+//Ubah Depan
+void ubahDepan(int data) {
+    if (isEmpty() == false) {
+        head->data = data;
+    }
+    else {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+//Ubah Tengah
+void ubahTengah(int data, int posisi) {
+    Node* bantu;
+
+    if (isEmpty() == false) {
+        if (posisi < 1 || posisi > hitungList()) {
+            cout << "Posisi di luar jangkauan" << endl;
+        }
+        else if (posisi == 1) {
+            cout << "Posisi bukan posisi tengah" << endl;
+        }
+        else {
+            bantu = head;
+            int nomor = 1;
+
+            while (nomor < posisi) {
+                bantu = bantu->next;
+                nomor++;
+            }
+
+            bantu->data = data;
+        }
+    }
+    else {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+//Ubah Belakang
+void ubahBelakang(int data) {
+    if (isEmpty() == false) {
+        tail->data = data;
+    }
+    else {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+//Hapus List
+void clearList() {
+    Node* bantu, * hapus;
+    bantu = head;
+
+    while (bantu != NULL) {
+        hapus = bantu;
+        bantu = bantu->next;
+        delete hapus;
+    }
+
+    head = tail = NULL;
+    cout << "List berhasil terhapus!" << endl;
+}
+
+//Tampilkan List
+void tampil() {
+    Node* bantu;
+    bantu = head;
+
+    if (isEmpty() == false) {
+        while (bantu != NULL) {
+            cout << bantu->data << ends;
+            bantu = bantu->next;
+        }
+
+        cout << endl;
+    }
+    else {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+int main() {
+    init();
+    insertDepan(3);
+    tampil();
+    insertBelakang(5);
+    tampil();
+    insertDepan(2);
+    tampil();
+    insertDepan(1);
+    tampil();
+    hapusDepan();
+    tampil();
+    hapusBelakang();
+    tampil();
+    insertTengah(7, 2);
+    tampil();
+    hapusTengah(2);
+    tampil();
+    ubahDepan(1);
+    tampil();
+    ubahBelakang(8);
+    tampil();
+    ubahTengah(11, 2);
+    tampil();
+
     return 0;
 }
+```
 Kode di atas adalah program C++ yang melakukan operasi aritmatika berdasarkan input pengguna. Ini dimulai dengan mendeklarasikan variabel untuk sebuah operator (op), dua operan (num1 dan num2), dan sebuah hasil. Program kemudian meminta pengguna untuk memasukkan operator (+, -, *, /) dan dua operan. Ia menggunakan pernyataan switch untuk menentukan operator yang dimasukkan oleh pengguna dan melakukan operasi aritmatika yang sesuai. Jika operatornya adalah '/', program akan memeriksa apakah pembagi (angka2) adalah nol. Jika ya, ia akan menghitung hasilnya dan menampilkannya menggunakan pernyataan cout. Jika pembaginya bukan nol, pesan kesalahan akan ditampilkan. Terakhir, program mengembalikan 0 untuk menunjukkan eksekusi berhasil.
 
 ### 2. Tipe Data Abstrak
 
-   #include <stdio.h>
-#include <string.h>
-
-// Struct
-struct Mahasiswa
-{
-    char name[50];
-    char address[50];
-    int age;
-};
-
-// Tipe Data Abstrak by Jordan
-
-int main() {
-    // Menggunakan Struct
-    struct Mahasiswa mhs1, mhs2;
-
-    // Mengisi nilai ke struct
-    strcpy(mhs1.name, "Dian");
-    strcpy(mhs1.address, "Mataram");
-    mhs1.age = 22;
-    strcpy(mhs2.name, "Bambang");
-    strcpy(mhs2.address, "Surabaya");
-    mhs2.age = 23;
-
-    // Mencetak isi dari struct
-    printf("## Mahasiswa 1 ##\n");
-    printf("Nama: %s\n", mhs1.name);
-    printf("Alamat: %s\n", mhs1.address);
-    printf("Umur: %d\n", mhs1.age);
-    printf("\n");
-    printf("## Mahasiswa 2 ##\n");
-    printf("Nama: %s\n", mhs2.name);
-    printf("Alamat: %s\n", mhs2.address);
-    printf("Umur: %d\n", mhs2.age);
-
-    return 0;
-}
-Kode yang diberikan adalah program C yang mendefinisikan sebuah struct bernama Mahasiswa, yang memiliki tiga field: nama (array karakter berukuran 50), alamat (array karakter lain berukuran 50), dan umur (sebuah bilangan bulat). Program kemudian membuat dua contoh struct, mhs1 dan mhs2, dan memberikan nilai ke bidangnya masing-masing. Terakhir, ia mencetak nilai kolom menggunakan fungsi printf.
-Kode ini menggunakan fungsi strcpy dari pustaka string.h untuk menyalin nilai string ke dalam bidang nama dan alamat struct. Itu juga menggunakan fungsi printf untuk memformat dan mencetak nilai bidang. Program ini mendemonstrasikan cara mendefinisikan dan menggunakan struct di C, serta cara mengakses dan memanipulasi bidangnya.
-
-### 3. Tipe Data Koleksi
+```C++
 
 #include <iostream>
-#include <array>
 using namespace std;
 
-// Tipe Data Koleksi by Jordan
+// Deklarasi Struct Node
+struct Node
+{
+    string data;
+    Node* next;
+};
 
-int main() {
-    // Deklarasi dan inisialisasi array
-    int nilai[5];
-    nilai[0] = 23;
-    nilai[1] = 50;
-    nilai[2] = 34;
-    nilai[3] = 78;
-    nilai[4] = 90;
+Node* head, * tail, * baru, * bantu, * hapus;
 
-    // Mencetak array dengan tab
-    cout << "Isi array pertama : " << nilai[0] << endl;
-    cout << "Isi array kedua : " << nilai[1] << endl;
-    cout << "Isi array ketiga : " << nilai[2] << endl;
-    cout << "Isi array keempat : " << nilai[3] << endl;
-    cout << "Isi array kelima : " << nilai[4] << endl;
+void init()
+{
+    head = NULL;
+    tail = head;
+}
 
+// Pengecekan
+int isEmpty()
+{
+    if (head == NULL)
+        return 1; // true
+    else
+        return 0; // false
+}
+
+// Buat Node Baru
+void buatNode(string data)
+{
+    baru = new Node;
+    baru->data = data;
+    baru->next = NULL;
+}
+
+// Hitung List
+int hitungList()
+{
+    bantu = head;
+    int jumlah = 0;
+    while (bantu != NULL)
+    {
+        jumlah++;
+        bantu = bantu->next;
+    }
+    return jumlah;
+}
+
+// Tambah Depan
+void insertDepan(string data)
+{
+    // Buat Node baru
+    buatNode(data);
+
+    if (isEmpty() == 1)
+    {
+        head = baru;
+        tail = head;
+        baru->next = head;
+    }
+    else
+    {
+        while (tail->next != head)
+        {
+            tail = tail->next;
+        }
+        baru->next = head;
+        head = baru;
+        tail->next = head;
+    }
+}
+
+// Tambah Belakang
+void insertBelakang(string data)
+{
+    // Buat Node baru
+    buatNode(data);
+
+    if (isEmpty() == 1)
+    {
+        head = baru;
+        tail = head;
+        baru->next = head;
+    }
+    else
+    {
+        while (tail->next != head)
+        {
+            tail = tail->next;
+        }
+        tail->next = baru;
+        baru->next = head;
+    }
+}
+
+// Tambah Tengah
+void insertTengah(string data, int posisi)
+{
+    if (isEmpty() == 1)
+    {
+        head = baru;
+        tail = head;
+        baru->next = head;
+    }
+    else
+    {
+        baru->data = data;
+        // transversing
+        int nomor = 1;
+        bantu = head;
+        while (nomor < posisi - 1)
+        {
+            bantu = bantu->next;
+            nomor++;
+        }
+        baru->next = bantu->next;
+        bantu->next = baru;
+    }
+}
+
+// Hapus Depan
+void hapusDepan()
+{
+    if (isEmpty() == 0)
+    {
+        hapus = head;
+        tail = head;
+        if (hapus->next == head)
+        {
+            head = NULL;
+            tail = NULL;
+            delete hapus;
+        }
+        else
+        {
+            while (tail->next != hapus)
+            {
+                tail = tail->next;
+            }
+            head = head->next;
+            tail->next = head;
+            hapus->next = NULL;
+            delete hapus;
+        }
+    }
+    else
+    {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+// Hapus Belakang
+void hapusBelakang()
+{
+    if (isEmpty() == 0)
+    {
+        hapus = head;
+        tail = head;
+        if (hapus->next == head)
+        {
+            head = NULL;
+            tail = NULL;
+            delete hapus;
+        }
+        else
+        {
+            while (hapus->next != head)
+            {
+                hapus = hapus->next;
+            }
+            while (tail->next != hapus)
+            {
+                tail = tail->next;
+            }
+            tail->next = head;
+            hapus->next = NULL;
+            delete hapus;
+        }
+    }
+    else
+    {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+// Hapus Tengah
+void hapusTengah(int posisi)
+{
+    if (isEmpty() == 0)
+    {
+        // transversing
+        int nomor = 1;
+        bantu = head;
+        while (nomor < posisi - 1)
+        {
+            bantu = bantu->next;
+            nomor++;
+        }
+        hapus = bantu->next;
+        bantu->next = hapus->next;
+        delete hapus;
+    }
+    else
+    {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+// Hapus List
+void clearList()
+{
+    if (head != NULL)
+    {
+        hapus = head->next;
+        while (hapus != head)
+        {
+            bantu = hapus->next;
+            delete hapus;
+            hapus = bantu;
+        }
+        delete head;
+        head = NULL;
+    }
+    cout << "List berhasil terhapus!" << endl;
+}
+
+// Tampilkan List
+void tampil()
+{
+    if (isEmpty() == 0)
+    {
+        tail = head;
+        do
+        {
+            cout << tail->data << ends;
+            tail = tail->next;
+        } while (tail != head);
+        cout << endl;
+    }
+    else
+    {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+int main()
+{
+    init();
+    insertDepan("Ayam");
+    tampil();
+    insertDepan("Bebek");
+    tampil();
+    insertBelakang("Cicak");
+    tampil();
+    insertBelakang("Domba");
+    tampil();
+    hapusBelakang();
+    tampil();
+    hapusDepan();
+    tampil();
+    insertTengah("Sapi", 2);
+    tampil();
+    hapusTengah(2);
+    tampil();
     return 0;
 }
-Kode yang diberikan adalah program C++ sederhana yang mendeklarasikan dan menginisialisasi array bilangan bulat yang disebut "nilai". Ia kemudian mencetak nilai setiap elemen dalam array menggunakan pernyataan "cout". Outputnya akan menampilkan nilai elemen array sesuai urutan penetapannya, dipisahkan oleh baris baru.
+```
+Kode yang diberikan adalah program C yang mendefinisikan sebuah struct bernama Mahasiswa, yang memiliki tiga field: nama (array karakter berukuran 50), alamat (array karakter lain berukuran 50), dan umur (sebuah bilangan bulat). Program kemudian membuat dua contoh struct, mhs1 dan mhs2, dan memberikan nilai ke bidangnya masing-masing. Terakhir, ia mencetak nilai kolom menggunakan fungsi printf. Kode ini menggunakan fungsi strcpy dari pustaka string.h untuk menyalin nilai string ke dalam bidang nama dan alamat struct. Itu juga menggunakan fungsi printf untuk memformat dan mencetak nilai bidang. Program ini mendemonstrasikan cara mendefinisikan dan menggunakan struct di C, serta cara mengakses dan memanipulasi bidangnya.
 
 ## Unguided 
 

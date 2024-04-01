@@ -616,7 +616,7 @@ Fungsi main() ini mendemonstrasikan penggunaan fungsi-fungsi ini dengan menyisip
 ## Unguided 
 
 ### 1. Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user. 1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
-![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan04/Soal%201.PNGraw=true)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan04/Soal%201.PNG?raw=true)
 ![SS](raw=true)
 
 #include <iostream>

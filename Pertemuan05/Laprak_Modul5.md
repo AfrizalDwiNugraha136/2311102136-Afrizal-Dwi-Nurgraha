@@ -3,11 +3,13 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+hash table adalah  struktur data yang terdiri dari tabel dan fungsi yang bertujuan untuk memetakan nilai kunci unik  setiap record (baris) ke nomor (hash) untuk posisi record  dalam  tabel. Kelebihan dari struktur table hash  ini adalah waktu pengambilannya yang cukup cepat, jika record yang dicari letaknya tepat pada nomor hash lokasi penyimpanan. Karena pemetaan hash  yang digunakan bukan pemetaan satu-ke-satu (antara dua record berbeda yang  dapat menghasilkan nomor hash yang sama), maka dapat terjadi konflik saat menempatkan record data. diperlukan untuk menerapkan kebijakan resolusi konflik. Kebijakan) untuk menentukan lokasi record dalam tabel. Biasanya kebijakan penyelesaian konflik adalah dengan mencari  tabel  kosong di lokasi setelah lokasi konflik.
+
+hash table menggunakan struktur data array asosiatif yang mengaitkan catatan dengan bidang kunci unik sebagai angka (hash) yang merupakan representasi catatan. Misalnya, Anda ingin menyimpan data sebagai string  dalam tabel hash. String  direpresentasikan dalam bidang kunci k. Ada berbagai cara untuk mendapatkan bidang kunci ini, namun hasil akhirnya adalah nomor hash yang digunakan untuk menemukan rekaman . Nomor hash ini dimasukkan ke dalam fungsi hash  dan membuat indeks lokasi rekaman yang dicatat dalam tabel. Fungsi generator bidang kunci k(x)  (1) Fungsi hash h(x)  (2)
 
 ## Guided 
 
-### 1.  Tipe Data Primitif
+### 1. Guided 1 
 
 ```C++
 #include <iostream>
@@ -144,7 +146,7 @@ int main()
 ```
 Kode di atas adalah program C++ yang melakukan operasi aritmatika berdasarkan input pengguna. Ini dimulai dengan mendeklarasikan variabel untuk sebuah operator (op), dua operan (num1 dan num2), dan sebuah hasil. Program kemudian meminta pengguna untuk memasukkan operator (+, -, *, /) dan dua operan. Ia menggunakan pernyataan switch untuk menentukan operator yang dimasukkan oleh pengguna dan melakukan operasi aritmatika yang sesuai. Jika operatornya adalah '/', program akan memeriksa apakah pembagi (angka2) adalah nol. Jika ya, ia akan menghitung hasilnya dan menampilkannya menggunakan pernyataan cout. Jika pembaginya bukan nol, pesan kesalahan akan ditampilkan. Terakhir, program mengembalikan 0 untuk menunjukkan eksekusi berhasil.
 
-### 2. Tipe Data Abstrak
+### 2. Guided 2
 
 ```C++
 #include <iostream>
@@ -361,4 +363,4 @@ int main() {
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] (https://elektro.um.ac.id/wp-content/uploads/2016/04/Struktur-Data-Modul-Praktikum-11-Hashing-Table.pdf)

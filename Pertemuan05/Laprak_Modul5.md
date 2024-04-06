@@ -468,7 +468,7 @@ return 0;
 
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan05/Unguided%201%20Hash%20.PNG?raw=true)
-![SS](?raw=true)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan05/Unguided%201(1)%20Hash%20.PNG?raw=true)
 
 Program C++ ini mengimplementasikan tabel hash untuk menyimpan data siswa (NIM, nama, dan nilai). Ini menyediakan antarmuka berbasis menu untuk melakukan berbagai operasi seperti menambah data, menghapus data, mencari berdasarkan NIM, mencari berdasarkan rentang skor, dan menampilkan semua data siswa.
 

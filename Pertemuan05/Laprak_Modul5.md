@@ -469,16 +469,37 @@ return 0;
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan01/Unguided%201%20tipe%20data.PNG?raw=true)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.   
+Program C++ ini mengimplementasikan tabel hash untuk menyimpan data siswa (NIM, nama, dan nilai). Ini menyediakan antarmuka berbasis menu untuk melakukan berbagai operasi seperti menambah data, menghapus data, mencari berdasarkan NIM, mencari berdasarkan rentang skor, dan menampilkan semua data siswa.
+
+Berikut rincian kodenya:
+
+1. Nodestruct: Mewakili sebuah node dalam tabel hash. Setiap node berisi NIM, nama, skor, dan penunjuk ke node berikutnya.
+   
+2. HashTableclass: Mengimplementasikan fungsionalitas tabel hash.
+   - insert: Menyisipkan node baru ke dalam tabel hash.</br>
+   - Hapus: Menghapus node dari tabel hash berdasarkan NIM yang ditentukan.</br>
+   - searchByNIM: Mencari node berdasarkan NIM yang ditentukan dan mengeluarkan data jika ditemukan.</br>
+   - searchByRange: Mencari node dengan skor antara 80 dan 90 dan mengeluarkan datanya.</br>
+   - displayAllData: Menampilkan semua data siswa yang disimpan dalam tabel hash.</br>
+   - displayMenu: Menampilkan opsi menu.</br>
+  
+3. mainfunction : Logika program utama untuk interaksi pengguna  dengan tabel hash.</br>
+   - Tampilkan opsi menu.</br>
+   - Gunakan tabel hash untuk melakukan operasi terkait berdasarkan pilihan pengguna.</br>
+
+ 
 
 ## Kesimpulan
-Hash Table adalah struktur data yang mengorganisir data ke dalam pasangan kunci-nilai.
-Hash Table terdiri dari dua komponen utama: array (atau vektor) dan fungsi hash.
-Hashing adalah teknik untuk mengubah nilai kunci menjadi rentang indeks array.
-Fungsi hash digunakan untuk menghasilkan nilai unik dari setiap data item, yang digunakan sebagai array indeks. Setiap ember dapat menampung satu atau beberapa data item.
-Ketika data perlu dicari, masukan kunci dijadikan sebagai parameter untuk fungsi hash, dan indeks posisi array yang dihasilkan digunakan untuk mencari data.
-Dalam kasus tabrakan hash, di mana dua atau lebih data memiliki nilai hash yang sama, tabel hash menyimpan data tersebut dalam slot yang sama dengan Teknik yang disebut chaining.
-Praktikum Struktur Data dan Algoritma mencakup pengertian, dasar teori, dan operasi tabel hash, serta contoh penggunaan tabel hash dalam pemrograman.
+1. Tabel hash adalah struktur data yang mengatur data menjadi pasangan nilai kunci.</br>
+2. Tabel hash terdiri dari dua komponen utama: array  (atau vektor) dan fungsi hash.</br>
+3. Hashing adalah teknik yang mengubah nilai kunci menjadi rentang indeks array.</br>
+4. Fungsi hash digunakan untuk menghasilkan nilai unik dari setiap bagian data dan digunakan sebagai array indeks.</br>
+5. Setiap keranjang dapat berisi satu atau lebih item data.</br>
+6. Ketika data perlu diambil, input kunci digunakan sebagai parameter  fungsi hash dan indeks posisi array yang dihasilkan digunakan untuk mengambil data.</br>
+7. Ketika tabrakan hash terjadi ketika dua atau lebih data memiliki nilai hash yang sama, tabel hash menyimpan data  dalam slot yang sama melalui teknik yang disebut chaining.</br>
+8. Struktur Data dan Algoritma dalam Prakteknya mencakup pengertian, landasan teori, dan fungsionalitas tabel hash, serta contoh penggunaan tabel hash dalam pemrograman.</br>
+
+
 
 ## Referensi
 [1] (https://elektro.um.ac.id/wp-content/uploads/2016/04/Struktur-Data-Modul-Praktikum-11-Hashing-Table.pdf)

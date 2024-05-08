@@ -280,7 +280,7 @@ int main() {
 
         cout << "== Hasil kalimat yang dibalikkan : " << KalimatDibalik_136 << endl; // Hasil kalimat yang dibalikan
 
-        cout << "[2138] Apakah Anda ingin mencoba kalimat lain? (y/n) : "; // Menanyakan Kepada user apakah ingin mencoba kalimat lain atau tidak
+        cout << "[2136] Apakah Anda ingin mencoba kalimat lain? (y/n) : "; // Menanyakan Kepada user apakah ingin mencoba kalimat lain atau tidak
         cin >> LanjutkanInputKalimat_136;
         cin.ignore(); // Untuk membersihkan Kalimat_138 buffer sebelumnya
     } while (LanjutkanInputKalimat_136 == 'y' || LanjutkanInputKalimat_136 == 'Y'); // Untuk melanjutkan input Kalimat_138 atau selesai
@@ -291,21 +291,19 @@ int main() {
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan06/Un%20Stak01.PNG)
 
-Kode di atas digunakan untuk implementasi dari struktur data stack yang digunakan untuk melakukan pembalikan terhadap sebuah kalimat. Pembalikan kalimat berarti mengubah urutan huruf-huruf dalam kalimat sehingga kalimat tersebut menjadi kalimat yang berbeda. Program ini menggunakan struktur data stack untuk memudahkan proses pembalikan. Library yang digunakan Program menggunakan library standar C++, yaitu '<iostream>' untuk input/output, '<string>' untuk manipulasi string, dan <stack> untuk menggunakan struktur data stack.
+Berikut adalah beberapa kesimpulan singkat:
 
-Program ini memiliki fungsi utama yang digunakan untuk melakukan pembalikan kalimat, antara lain :
-1. 'Penggunaan Stack' : Program ini menggunakan stack untuk menyimpan karakter-karakter dari kalimat yang dimasukkan. Stack digunakan untuk memudahkan proses pembalikan karena stack dapat memungkinkan penggunaan First-In-First-Out (FIFO) dalam mengambil karakter-karakter dari kalimat.
-2. 'Pembalikan Kalimat' : Program ini melakukan pembalikan kalimat dengan cara mengambil karakter-karakter dari stack dan menambahkannya ke dalam sebuah string baru. Jika karakter yang diambil adalah spasi, maka spasi juga ditambahkan ke dalam string baru. Jika tidak, maka karakter yang diambil ditambahkan ke dalam string baru.
+1.Validasi Input: Meskipun program ini tidak meminta pengguna memasukkan kalimat dengan minimal tiga kata, mungkin ingin menambahkan beberapa validasi untuk memastikan bahwa input memenuhi persyaratan ini.
 
-  Contoh penggunaannya misal user memasukkan kalimat : Telkom Purwokerto, maka hasil yang dibalik menjadi : otrekowruP mokleT. Kemudian user diminta apakah ingin mencoba kalimat lain atau tidak. Jika y berarti iya dan program lanjut, sedangkan jika n berarti tidak atau program selesai. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
+2.Merawat Baris Baru: Ketika seseorang memasukkan kalimat dan tidak mengetik apa pun, mereka akan menghasilkan string kosong yang sedang diproses. Anda mungkin ingin mengatasi hal ini dengan memeriksa input kosong dan meminta mereka memasukkan kalimat yang benar.
+
+3.Efisiensi: Metode ini sederhana dan efektif untuk input yang lebih kecil. Namun, untuk input yang lebih besar, terutama kalimat dengan banyak karakter, menggunakan tumpukan untuk pembalikan mungkin bukan metode yang paling efektif.  dapat mencoba salah kalimat dengan dua petunjuk atau mengubah string secara langsung.
+Bertanya dalam Nama: Nama
 
 
 ## Kesimpulan
-Kesimpulannya, pada modul 6 ini Stack atau tumpukan merupakan struktur data LIFO (Last In First Out) dimana suatu struktur data yang terbentuk dari barisan hingga yang terurut dari satuan data. Pada stack, penambahan dan penghapusan elemennya hanya dapat dilakukan pada satu posisi, yaitu posisi terakhir stack dimasukkan yang disebut 'push' menjadi yang pertama dikeluarkan yang disebut 'pop'.
+Kesimpulan dari praktikum struktur data dan algoritma tentang stack adalah struktur data yang memungkinkan penyimpanan dan penghapusan elemen secara terurut. Ini adalah kesimpulan dari praktikum Struktur data dan algoritma stack. Untuk menyelesaikan berbagai masalah, seperti mencari elemen tertentu, menghapus elemen, atau memaksakan urutan elemen, tumpukan dapat digunakan. Dalam praktikum, contoh penggunaan stack dalam bahasa C++ menunjukkan bagaimana operasi dasar seperti push, pop, dan peek dapat digunakan untuk mengelola stack. Kesimpulannya juga menunjukkan bahwa stack dapat digunakan dalam berbagai aplikasi, seperti mencari kalimat palindrom atau simetri, serta memahami konsep dasar kalimat stack dan cara programnya bekerja.
 
-Keunggulan atau Kelebihan Stack yaitu dapat melakukan seperti undo dan rendo, yang dimana program ini dapat melakukan pembalikan terhadap kata ataupun kalimat. Dengan menggunakan stack, program ini menunjukkan bagaimana struktur data sederhana dapat digunakan untuk menyelesaikan tugas-tugas tertentu dengan sangat efisien untuk digunakan dalam aplikasi yang membutuhkan operasi-operasi tersebut secara berulang.
-
-Kekurangan Stack antara lain seperti Ukuran terbatas, Ukuran stack biasanya tetap dan terbatas, tergantung pada implementasi atau batasan memori dari sistem, jika stack sudah penuh dan operasi push dilakukan, maka akan terjadi overflow. Stack memiliki sifat LIFO yang tidak dapat diubah, artinya elemen yang dimasukkan terakhir akan menjadi elemen yang pertama kali diambil, Ini membuat stack kurang fleksibel untuk digunakan dalam beberapa situasi yang memerlukan akses acak atau pengubahan urutan data. Tidak dapat digunakan untuk semua kasus, dan Tidak mendukung operasi pencarian.
 
 ## Referensi
  [1] [Dr. Joseph Teguh Santoso. Struktur Data dan ALgoritma. Semarang: Yayasan Prima Agus Teknik. 2021.](https://ocw.upj.ac.id/files/Handout-TIF104-Modul-Praltikum-Struktur-Data.pdf)

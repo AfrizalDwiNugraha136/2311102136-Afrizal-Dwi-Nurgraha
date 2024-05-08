@@ -150,8 +150,6 @@ int main() {
 ## Unguided 
 
 ### 1. [Buatlah program untuk menentukan apakah kalimat tersebut yang diinputkan dalam program stack adalah palindrom/tidak. Palindrom kalimat yang dibaca dari depan dan belakang sama. Jelaskan bagaimana cara kerja programnya.]
-![Soal_Unguided1_Laprak6.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Soal_Unguided1_Laprak6.png)
-
 
 ```C++
 // LAPRAK 6 : UNGUIDED 1

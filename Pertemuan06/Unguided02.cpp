@@ -35,7 +35,7 @@ int main() {
 
         cout << "== Hasil kalimat yang dibalikkan : " << KalimatDibalik_136 << endl; // Hasil kalimat yang dibalikan
 
-        cout << "[2138] Apakah Anda ingin mencoba kalimat lain? (y/n) : "; // Menanyakan Kepada user apakah ingin mencoba kalimat lain atau tidak
+        cout << "[2136] Apakah Anda ingin mencoba kalimat lain? (y/n) : "; // Menanyakan Kepada user apakah ingin mencoba kalimat lain atau tidak
         cin >> LanjutkanInputKalimat_136;
         cin.ignore(); // Untuk membersihkan Kalimat_138 buffer sebelumnya
     } while (LanjutkanInputKalimat_136 == 'y' || LanjutkanInputKalimat_136 == 'Y'); // Untuk melanjutkan input Kalimat_138 atau selesai

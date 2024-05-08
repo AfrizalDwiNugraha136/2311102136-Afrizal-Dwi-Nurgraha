@@ -53,15 +53,15 @@ int main() {
     cout << "\n>>>> SELAMAT DATANG DI PROGRAM PALINDROM BY AFRIZAL DWI NUGRAHA 2311102136 <<<<" << endl; // Judul Program
 
     do {
-        // Memasukkan Kata_138 atau kalimat yang ingin dimasukkan
+        // Memasukkan Kata_136 atau kalimat yang ingin dimasukkan
         string Kata_136;
         cout << "\n>> Masukkan kalimat : "; // User diminta untuk memasukan kata atau kalimat yang ingin dimasukkan
         getline(cin, Kata_136);
 
-        // Membersihkan Kata_138 dari spasi, karakter non-alphanumeric, dan mengubah huruf menjadi huruf kecil
+        // Membersihkan Kata_136 dari spasi, karakter non-alphanumeric, dan mengubah huruf menjadi huruf kecil
         string KataBersih_136 = BersihkanKata_136 (Kata_136);
 
-        // Memeriksa apakah Kata_138 adalah palindrom setelah dibersihkan
+        // Memeriksa apakah Kata_136 adalah palindrom setelah dibersihkan
         if (Palindrom_136 (KataBersih_136)) {
             cout << "== Kalimat tersebut adalah : Palindrom" << endl; // Hasil yang berarti kata atau kalimat tersebut Palindrom
         } else {
@@ -70,7 +70,7 @@ int main() {
 
         cout << "[2136] Apakah Anda ingin mencoba kalimat lain? (y/n) : "; // Menanyakan Kepada user apakah ingin mencoba kalimat lain atau tidak
         cin >> LanjutkanInputKata_136;
-        cin.ignore(); // Untuk membersihkan buffer Kata_138 sebelumnya
+        cin.ignore(); // Untuk membersihkan buffer Kata_136 sebelumnya
     } while (LanjutkanInputKata_136 == 'y' || LanjutkanInputKata_136 == 'Y'); // Untuk melanjutkan input kata atau selesai
 
     return 0;

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/PC BRANDED/Documents/AfrizalVS/new/2311102136-Afrizal-Dwi-Nurgraha/Pertemuan06",
-      "program": "c:/Users/PC BRANDED/Documents/AfrizalVS/new/2311102136-Afrizal-Dwi-Nurgraha/Pertemuan06/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

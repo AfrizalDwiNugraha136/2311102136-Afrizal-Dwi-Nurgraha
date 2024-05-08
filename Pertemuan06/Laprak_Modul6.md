@@ -1,35 +1,10 @@
 # <h1 align="center">LAPORAN PRAKTIKUM MODUL 6 : STACK</h1>
-<p align="center">RICO ADE PRATAMA - 2311102138</p>
+<p align="center">AFRIZAL DWI NUGRAHA - 2311102136</p>
 
 # Dasar Teori
 
 ## A. PENGERTIAN STACK
-Stack adalah struktur data sederhana yang digunakan untuk menyimpan data (mirip dengan Linked Lists). Stack atau tumpukan merupakan struktur data LIFO (Last In First Out) dimana suatu struktur data yang terbentuk dari barisan hingga yang terurut dari satuan data. Pada stack, penambahan dan penghapusan elemennya hanya dapat dilakukan pada satu posisi, yaitu posisi terakhir stack dimasukkan yang disebut 'push' menjadi yang pertama dikeluarkan yang disebut 'pop'.
-
-## B. PENGGUNAAN STACK
-Penggunaan Stack sangat beragam seperti dalam penggunaan aritmatika, pemrograman rekursi, pemeriksaan tanda kurung, manajemen memori, dan pemprosesan pemanggilan sebuah fungsi. Contoh implementasi tumpukan(stack) adalah fitur tombol back(kembali) pada browser, dimana browser akan menyimpan semua URL yang telah dikunjungi sebelumnya dalam tumpukan(stack). Setiap kali mengunjungi halaman baru, halaman itu ditambahkan di atas tumpukan(stack). Dan Saat menekan tombol back(kembali), URL saat ini dihapus dari tumpukan, dan URL yang sebelumnya telah diakses.
-
-## C. PROBLEM ATAU KONDISI YANG DIWASPADAI
-Adapun dua Probem atau kondisi yang perlu diwaspadai dalam struktur data stack, yaitu underflow dan overflow :
-1. Stack underflow terjadi saat kita mencoba mengambil buku dari tumpukan yang kosong, seperti mencoba mengambil buku dari tumpukan yang tidak memiliki buku sama sekali.
-2. Stack overflow terjadi saat tumpukan sudah penuh dengan buku namun kita masih mencoba menambahkan buku baru ke dalamnya, seperti mencoba menambahkan buku baru ke tumpukan yang sudah terlalu tinggi untuk menampungnya.
-
-## D. JENIS-JENIS OPERASI
-Operasi yang umum digunakan pada stack :
-- Push (Masukkan) : Menambahkan atau Memasukkan elemen ke dalam tumpukan posisi paling atas.
-- Pop (Keluarkan) : Menghapus atau Mengeluarkan elemen dari posisi sangat atas tumpukan.
-- Top (Atas) : Melihat elemen teratas pada tumpukan tanpa menghapusnya.
-- IsEmpty (Kosong): Mengecek apakah tumpukan kosong ataupun tidak.
-- IsFull (Penuh) : Mengecek apakah tumpukan penuh ataupun tidak (paling utama pada implementasi tumpukan dengan kapasitas terbatas).
-- Size (Ukuran) : Mengembalikan jumlah elemen yang terdapat dalam tumpukan.
-- Peek (Lihat) : Melihat elemen pada posisi tertentu dalam tumpukan tanpa menghapusnya.
-- Clear (Membersihkan) :  Mengosongkan atau menghapus semua elemen dari tumpukan.
-- Search (Cari): Mencari keberadaan elemen tertentu dalam tumpukan. 
-
-## E. CONTOH ILLUSTRASI STACK
-![CONTOH ILLUSTRASI STACK1](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Contoh_Ilustrasi_Stack1.jpg)
-![CONTOH ILLUSTRASI STACK2](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Contoh_Ilustrasi_Stack2.png)
-
+Kumpulan elemen data yang dismpan dalam satu lajur linier disebut tumpukan. Elemen data hanya dapat diakses pada satu lokasi, yaitu pada posisi ATAS (TOP) tumpukan.Tumpukan elemen dapat berisi data integer, nyata, rekaman, atau terstruktur.Penambahan elemen baru (PUSH) dan penghapusan elemen dari tumpukan (POP) adalah cara tumpukan disebut "Push Down Stack". Tumpukan ini menggunakan prinsip LIFO, yang berarti Masuk Terakhir Keluar Pertama.
 
 ## Guided 
 
@@ -172,22 +147,6 @@ int main() {
 
 ```
 
-Kode di atas digunakan untuk mengimplementasikan program Stack menggunakan array dalam bahasa pemrograman C++. Program Dimulai dengan mendefinisikan array arrayBuku yang berukuran 5 dan beberapa variabel global seperti 'maksimal' atau dari maksimal elemen yang dapat ditampung, dan 'top' yang menandakan posisi teratas pada stack.
-Ada beberapa fungsi utilitas yang digunakan dalam program tersebut, antara lain:
-- 'isFull()' untuk memeriksa apakah stack sudah penuh.
-- 'isEmpty()' untuk memeriksa apakah stack kosong.
-- 'pushArrayBuku(string data)' untuk menambahkan data ke dalam stack.
-- 'popArrayBuku()' untuk menghapus data dari stack.
-- 'peekArrayBuku(int posisi)' untuk melihat data pada posisi tertentu di dalam stack.
-- 'countStack()' untuk menghitung jumlah data dalam stack.
-- 'changeArrayBuku(int posisi, string data)' untuk mengubah data pada posisi tertentu di dalam stack.
-- 'destroyArraybuku()' untuk menghapus semua data dari stack.
-- 'cetakArrayBuku()' untuk mencetak semua data dalam stack.
-
-#### Hasil dari output program diatas seperti :
-![Output_Guided1_Laprak6.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Output_Guided1_Laprak6.png)
-
-
 ## Unguided 
 
 ### 1. [Buatlah program untuk menentukan apakah kalimat tersebut yang diinputkan dalam program stack adalah palindrom/tidak. Palindrom kalimat yang dibaca dari depan dan belakang sama. Jelaskan bagaimana cara kerja programnya.]
@@ -196,8 +155,8 @@ Ada beberapa fungsi utilitas yang digunakan dalam program tersebut, antara lain:
 
 ```C++
 // LAPRAK 6 : UNGUIDED 1
-// RICO ADE PRATAMA
-// 2311102138
+// AFRIZAL DWI NUGRAHA
+// 2311102136
 // S1 IF-11-D
 
 // Program Stack untuk menentukan apakah kalimat tersebut Palindrom/tidak
@@ -208,71 +167,70 @@ Ada beberapa fungsi utilitas yang digunakan dalam program tersebut, antara lain:
 using namespace std;
 
 // Fungsi untuk membersihkan Kata_138 dari spasi dan karakter non-alphanumeric
-string BersihkanKata_138 (string Kata_138) {
-    string KataBersih_138;
-    for (char & c_138 : Kata_138) {
-        if (isalpha(c_138)) { // Memeriksa apakah karakter adalah huruf
-            KataBersih_138 += tolower(c_138); // Mengubah huruf menjadi huruf kecil atau bersih
+string BersihkanKata_136 (string Kata_136) {
+    string KataBersih_136;
+    for (char & c_136 : Kata_136) {
+        if (isalpha(c_136)) { // Memeriksa apakah karakter adalah huruf
+            KataBersih_136 += tolower(c_136); // Mengubah huruf menjadi huruf kecil atau bersih
         }
     }
-    return KataBersih_138;
+    return KataBersih_136;
 }
 
 // Fungsi untuk memeriksa apakah sebuah string adalah palindrom
-bool Palindrom_138 (string Kata_138) {
-    stack<char> TumpukkanKata_138;
-    int Length_138 = Kata_138.length();
+bool Palindrom_136 (string Kata_136) {
+    stack<char> TumpukkanKata_136;
+    int Length_136 = Kata_136.length();
 
     // Memasukkan setengah karakter pertama ke dalam tumpukan
-    for (int i_138 = 0; i_138 < Length_138 / 2; i_138++) {
-        TumpukkanKata_138.push(Kata_138[i_138]);
+    for (int i_136 = 0; i_136 < Length_136 / 2; i_136++) {
+        TumpukkanKata_136.push(Kata_136[i_136]);
     }
 
     // Menentukan titik awal untuk membandingkan karakter kedua setengah
-    int Mulai_138 = Length_138 / 2;
-    if (Length_138 % 2 != 0) {
-        Mulai_138++;
+    int Mulai_136 = Length_136 / 2;
+    if (Length_136 % 2 != 0) {
+        Mulai_136++;
     }
 
     // Membandingkan karakter kedua setengah dengan karakter dalam tumpukan
-    for (int i_138 = Mulai_138; i_138 < Length_138; i_138++) {
-        if (TumpukkanKata_138.empty() || Kata_138[i_138] != TumpukkanKata_138.top()) {
+    for (int i_136 = Mulai_136; i_136 < Length_136; i_136++) {
+        if (TumpukkanKata_136.empty() || Kata_136[i_136] != TumpukkanKata_136.top()) {
             return false;
         }
-        TumpukkanKata_138.pop();
+        TumpukkanKata_136.pop();
     }
 
     return true;
 }
 
 int main() {
-    char LanjutkanInputKata_138;
-    cout << "\n>>>> SELAMAT DATANG DI PROGRAM PALINDROM BY RICO ADE PRATAMA 2311102138 <<<<" << endl; // Judul Program
+    char LanjutkanInputKata_136;
+    cout << "\n>>>> SELAMAT DATANG DI PROGRAM PALINDROM BY AFRIZAL DWI NUGRAHA 2311102136 <<<<" << endl; // Judul Program
 
     do {
-        // Memasukkan Kata_138 atau kalimat yang ingin dimasukkan
-        string Kata_138;
+        // Memasukkan Kata_136 atau kalimat yang ingin dimasukkan
+        string Kata_136;
         cout << "\n>> Masukkan kalimat : "; // User diminta untuk memasukan kata atau kalimat yang ingin dimasukkan
-        getline(cin, Kata_138);
+        getline(cin, Kata_136);
 
-        // Membersihkan Kata_138 dari spasi, karakter non-alphanumeric, dan mengubah huruf menjadi huruf kecil
-        string KataBersih_138 = BersihkanKata_138 (Kata_138);
+        // Membersihkan Kata_136 dari spasi, karakter non-alphanumeric, dan mengubah huruf menjadi huruf kecil
+        string KataBersih_136 = BersihkanKata_136 (Kata_136);
 
-        // Memeriksa apakah Kata_138 adalah palindrom setelah dibersihkan
-        if (Palindrom_138 (KataBersih_138)) {
+        // Memeriksa apakah Kata_136 adalah palindrom setelah dibersihkan
+        if (Palindrom_136 (KataBersih_136)) {
             cout << "== Kalimat tersebut adalah : Palindrom" << endl; // Hasil yang berarti kata atau kalimat tersebut Palindrom
         } else {
             cout << "== Kalimat tersebut adalah : Bukan Palindrom" << endl; // Hasil yang berarti kata atau kalimat tersebut Bukan Palindrom
         }
 
-        cout << "[2138] Apakah Anda ingin mencoba kalimat lain? (y/n) : "; // Menanyakan Kepada user apakah ingin mencoba kalimat lain atau tidak
-        cin >> LanjutkanInputKata_138;
-        cin.ignore(); // Untuk membersihkan buffer Kata_138 sebelumnya
-    } while (LanjutkanInputKata_138 == 'y' || LanjutkanInputKata_138 == 'Y'); // Untuk melanjutkan input kata atau selesai
+        cout << "[2136] Apakah Anda ingin mencoba kalimat lain? (y/n) : "; // Menanyakan Kepada user apakah ingin mencoba kalimat lain atau tidak
+        cin >> LanjutkanInputKata_136;
+        cin.ignore(); // Untuk membersihkan buffer Kata_136 sebelumnya
+    } while (LanjutkanInputKata_136 == 'y' || LanjutkanInputKata_136 == 'Y'); // Untuk melanjutkan input kata atau selesai
 
     return 0;
 }
-
 
 ```
 #### Output:
@@ -361,10 +319,6 @@ Keunggulan atau Kelebihan Stack yaitu dapat melakukan seperti undo dan rendo, ya
 Kekurangan Stack antara lain seperti Ukuran terbatas, Ukuran stack biasanya tetap dan terbatas, tergantung pada implementasi atau batasan memori dari sistem, jika stack sudah penuh dan operasi push dilakukan, maka akan terjadi overflow. Stack memiliki sifat LIFO yang tidak dapat diubah, artinya elemen yang dimasukkan terakhir akan menjadi elemen yang pertama kali diambil, Ini membuat stack kurang fleksibel untuk digunakan dalam beberapa situasi yang memerlukan akses acak atau pengubahan urutan data. Tidak dapat digunakan untuk semua kasus, dan Tidak mendukung operasi pencarian.
 
 ## Referensi
- [1] Dr. Joseph Teguh Santoso. Struktur Data dan ALgoritma. Semarang: Yayasan Prima Agus Teknik. 2021.
+ [1] [Dr. Joseph Teguh Santoso. Struktur Data dan ALgoritma. Semarang: Yayasan Prima Agus Teknik. 2021.](https://ocw.upj.ac.id/files/Handout-TIF104-Modul-Praltikum-Struktur-Data.pdf)
 
- [2] Muhammad Nugraha. Dasar Pemrograman Dengan C++ Materi Paling Dasar untuk Menjadi Programmer Berbagai Platform. Yogyakarta. 2021.
-
- [3] Mulyana A. E-Books Cara Mudah Mempelajari Algoritma dan Struktur Data. 2023.
-
- [4] Rafsanjani, Malik Akbar Hashemi. "Implementasi Algoritma Pengurutan General Purpose dan Berbasis Komparasi untuk Data Berkategori dalam Waktu Linier Tanpa Paralelisasi", 2021.
+ [2] [Muhammad Nugraha. Dasar Pemrograman Dengan C++ Materi Paling Dasar untuk Menjadi Programmer Berbagai Platform. Yogyakarta. 2021.](https://sisfo.itp.ac.id/bahanajar/BahanAjar/Anisya/Modul%203%20-%20Tumpukan.pdf)

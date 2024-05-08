@@ -234,22 +234,18 @@ int main() {
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan06/Un%20Stak.PNG)
 
-Kode di atas digunakan untuk implementasi dari struktur data stack untuk menentukan apakah sebuah kalimat adalah palindrom atau tidak dalam bahasa pemrograman C++. Palindrom adalah kata atau kalimat yang memiliki sifat bahwa jika dibalik, maka huruf-huruf dan kata-katanya tetap sama. Library yang digunakan Program menggunakan library standar C++, yaitu '<iostream>' untuk input/output, '<string>' untuk manipulasi string, dan <stack> untuk menggunakan struktur data stack.
+Ini adalah ringkasan singkat dari fungsinya:
 
-Program ini memiliki dua fungsi utama yang digunakan, antara lain :
-1. 'BersihkanKata_138' : Fungsi ini digunakan untuk membersihkan sebuah kalimat dari spasi dan karakter non-alphanumeric, serta mengubah huruf menjadi huruf kecil. Fungsi ini membantu dalam memproses kalimat agar dapat diperiksa sebagai palindrom. Ini penting karena dalam pengecekan palindrom, kita ingin membandingkan kata secara konsisten tanpa memperdulikan huruf besar atau kecil serta karakter non-alphanumeric.
-2. 'Palindrom_138': Fungsi ini digunakan untuk memeriksa apakah sebuah kalimat adalah palindrom atau tidak. Fungsi ini menggunakan konsep tumpukkan (stack) untuk membandingkan setengah karakter pertama dengan setengah karakter kedua dari kalimat. Jika setengah karakter pertama dan setengah karakter kedua cocok, maka kalimat tersebut adalah palindrom.
+1. Palindrom_136: Fungsi ini menentukan apakah string tertentu adalah palindrom, membersihkan kata_136: Fungsi ini membersihkan string masukan dengan menghapus spasi dan karakter non-alfanumerik serta mengubah semua karakter menjadi huruf kecil. Karakter dari string paruh pertama dan kedua dibandingkan menggunakan tumpukan.
 
-
-  Contoh penggunaannya misal user memasukkan kalimat : ini, berarti kalimat tersebut termasuk palindrom, dan misal user memasukkan kalimat : telkom berarti kalimat tersebut bukan palindrom. Kemudian user diminta apakah ingin mencoba kalimat lain atau tidak. jika y berarti iya dan program lanjut, sedangkan jika n berarti tidak atau program selesai. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
-
+2. Main: Anda berulang kali meminta pengguna memasukkan kalimat atau kata dalam fungsi utama. Selanjutnya, Anda menggunakan BersihkanKata_136 untuk membersihkan input dan menggunakan Palindrom_136 untuk mengetahui apakah itu palindrom. Terakhir, Anda meminta pengguna untuk mencoba input tambahan dan melanjutkan jika mereka memilih untuk melakukannya.
 
 ### 2. [Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?]
 
 ```C++
 // LAPRAK 6 : UNGUIDED 2
-// RICO ADE PRATAMA
-// 2311102138
+// AFRIZAL DWI NUGRAHA
+// 2311102136
 // S1 IF-11-D
 
 // Program Stack untuk melakukan pembalikan terhadap kalimat
@@ -260,38 +256,37 @@ Program ini memiliki dua fungsi utama yang digunakan, antara lain :
 using namespace std;
 
 int main() {
-    stack<char> CharStack_138;      // Inisialisasi stack untuk menyimpan karakter
-    char LanjutkanInputKalimat_138; // Untuk melanjutkan input kalimat
-    cout << "\n>>>> SELAMAT DATANG DI PROGRAM PEMBALIKAN KALIMAT BY RICO ADE PRATAMA 2311102138 <<<<" << endl; // Judul Program
+    stack<char> CharStack_136;      // Inisialisasi stack untuk menyimpan karakter
+    char LanjutkanInputKalimat_136; // Untuk melanjutkan input kalimat
+    cout << "\n>>>> SELAMAT DATANG DI PROGRAM PEMBALIKAN KALIMAT BY AFRIZAL DWI NUGRAHA 2311102136 <<<<" << endl; // Judul Program
 
     do {
-        string Kalimat_138, KalimatDibalik_138;
+        string Kalimat_136, KalimatDibalik_136;
         cout << "\n>> Masukkan kalimat minimal 3 kata : "; // User diminta untuk memasukan kalimat yang ingin dimasukkan, dengan minimal 3 kata
-        getline(cin, Kalimat_138);  // Membaca input Kalimat_138 dari pengguna
+        getline(cin, Kalimat_136);  // Membaca input Kalimat_138 dari pengguna
 
-        for (char c_138 : Kalimat_138) {
-            CharStack_138.push(c_138); // Menambahkan setiap karakter ke dalam stack
+        for (char c_136 : Kalimat_136) {
+            CharStack_136.push(c_136); // Menambahkan setiap karakter ke dalam stack
         }
 
-        while (!CharStack_138.empty()) { // Untuk memeriksa apakah stack tersebut kosong atau tidak
-            if (CharStack_138.top() == ' ') {
-                KalimatDibalik_138 += ' '; // Menambahkan spasi ke Kalimat_138 terbalik jika karakter teratas adalah spasi
+        while (!CharStack_136.empty()) { // Untuk memeriksa apakah stack tersebut kosong atau tidak
+            if (CharStack_136.top() == ' ') {
+                KalimatDibalik_136 += ' '; // Menambahkan spasi ke Kalimat_138 terbalik jika karakter teratas adalah spasi
             } else {
-                KalimatDibalik_138 += CharStack_138.top(); // Menambahkan karakter teratas dari stack ke Kalimat_138 terbalik
+                KalimatDibalik_136 += CharStack_136.top(); // Menambahkan karakter teratas dari stack ke Kalimat_138 terbalik
             }
-            CharStack_138.pop(); // Menghapus karakter teratas dari stack
+            CharStack_136.pop(); // Menghapus karakter teratas dari stack
         }
 
-        cout << "== Hasil kalimat yang dibalikkan : " << KalimatDibalik_138 << endl; // Hasil kalimat yang dibalikan
+        cout << "== Hasil kalimat yang dibalikkan : " << KalimatDibalik_136 << endl; // Hasil kalimat yang dibalikan
 
         cout << "[2138] Apakah Anda ingin mencoba kalimat lain? (y/n) : "; // Menanyakan Kepada user apakah ingin mencoba kalimat lain atau tidak
-        cin >> LanjutkanInputKalimat_138;
+        cin >> LanjutkanInputKalimat_136;
         cin.ignore(); // Untuk membersihkan Kalimat_138 buffer sebelumnya
-    } while (LanjutkanInputKalimat_138 == 'y' || LanjutkanInputKalimat_138 == 'Y'); // Untuk melanjutkan input Kalimat_138 atau selesai
+    } while (LanjutkanInputKalimat_136 == 'y' || LanjutkanInputKalimat_136 == 'Y'); // Untuk melanjutkan input Kalimat_138 atau selesai
 
     return 0;
 }
-
 ```
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan06/Un%20Stak01.PNG)

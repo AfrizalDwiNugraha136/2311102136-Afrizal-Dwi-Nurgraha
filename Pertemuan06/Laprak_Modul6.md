@@ -232,7 +232,7 @@ int main() {
 
 ```
 #### Output:
-![SS_Unguided1_Laprak6_2311102138_RicoAdePratama.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/SS_Unguided1_Laprak6_2311102138_RicoAdePratama.png)
+![SS_Unguided1_Laprak6_2311102136_AfrizalDwiNugraha.png](/https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan06/Un%20Stak.PNG)
 
 
 Kode di atas digunakan untuk implementasi dari struktur data stack untuk menentukan apakah sebuah kalimat adalah palindrom atau tidak dalam bahasa pemrograman C++. Palindrom adalah kata atau kalimat yang memiliki sifat bahwa jika dibalik, maka huruf-huruf dan kata-katanya tetap sama. Library yang digunakan Program menggunakan library standar C++, yaitu '<iostream>' untuk input/output, '<string>' untuk manipulasi string, dan <stack> untuk menggunakan struktur data stack.

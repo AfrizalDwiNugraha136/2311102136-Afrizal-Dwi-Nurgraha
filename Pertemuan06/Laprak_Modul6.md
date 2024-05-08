@@ -232,7 +232,7 @@ int main() {
 
 ```
 #### Output:
-https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan06/Un%20Stak.PNG
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan06/Un%20Stak.PNG)
 
 Kode di atas digunakan untuk implementasi dari struktur data stack untuk menentukan apakah sebuah kalimat adalah palindrom atau tidak dalam bahasa pemrograman C++. Palindrom adalah kata atau kalimat yang memiliki sifat bahwa jika dibalik, maka huruf-huruf dan kata-katanya tetap sama. Library yang digunakan Program menggunakan library standar C++, yaitu '<iostream>' untuk input/output, '<string>' untuk manipulasi string, dan <stack> untuk menggunakan struktur data stack.
 
@@ -245,7 +245,6 @@ Program ini memiliki dua fungsi utama yang digunakan, antara lain :
 
 
 ### 2. [Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?]
-![Soal_Unguided2_Laprak6.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Soal_Unguided2_Laprak6.png)
 
 ```C++
 // LAPRAK 6 : UNGUIDED 2
@@ -293,11 +292,9 @@ int main() {
     return 0;
 }
 
-
-
 ```
 #### Output:
-![SS_Unguided2_Laprak6_2311102138_RicoAdePratama.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/SS_Unguided2_Laprak6_2311102138_RicoAdePratama.png)
+![SS]()
 
 Kode di atas digunakan untuk implementasi dari struktur data stack yang digunakan untuk melakukan pembalikan terhadap sebuah kalimat. Pembalikan kalimat berarti mengubah urutan huruf-huruf dalam kalimat sehingga kalimat tersebut menjadi kalimat yang berbeda. Program ini menggunakan struktur data stack untuk memudahkan proses pembalikan. Library yang digunakan Program menggunakan library standar C++, yaitu '<iostream>' untuk input/output, '<string>' untuk manipulasi string, dan <stack> untuk menggunakan struktur data stack.
 

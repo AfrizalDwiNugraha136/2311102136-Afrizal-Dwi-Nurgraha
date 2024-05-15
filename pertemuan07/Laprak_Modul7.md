@@ -245,30 +245,35 @@ int main() {
 Ini adalah ringkasan singkat dari fungsinya:
 
 1. Struktur Node:
--Struct Nodemewakili satu node dalam link list.
+   
+- Struct Nodemewakili satu node dalam link list.</br>
+- Ini berisi dataanggota untuk menyimpan elemen antrian dan nextpointer untuk menghubungkan ke node berikutnya.</br>
 
--Ini berisi dataanggota untuk menyimpan elemen antrian dan nextpointer untuk menghubungkan ke node berikutnya.
 
-3. Kelas Antrian:
--Kelas Queuemengelola struktur daftar tertaut dan menyediakan operasi untuk manipulasi antrian.
+2. Kelas Antrian:
+   
+- Kelas Queuemengelola struktur daftar tertaut dan menyediakan operasi untuk manipulasi antrian.</br>
+- Ia memelihara frontdan rearmenunjuk ke node pertama dan terakhir , dan sizevariabel untuk melacak jumlah elemen.</br>
 
--Ia memelihara frontdan rearmenunjuk ke node pertama dan terakhir , dan sizevariabel untuk melacak jumlah elemen.
 
-5. Operasi:
--enqueueAntrian(data): Menambahkan elemen baru datake belakang antrian.
--dequeueAntrian(): Menghapus elemen dari depan antrian.
--viewQueue(): Menampilkan semua elemen dalam antrian.
--countQueue(): Mengembalikan jumlah elemen dalam antrian saat ini.
--clearQueue():Menghapus semua elemen dari antrian.
+3. Operasi:
+   
+- enqueueAntrian(data): Menambahkan elemen baru datake belakang antrian.</br>
+- dequeueAntrian(): Menghapus elemen dari depan antrian.</br>
+- viewQueue(): Menampilkan semua elemen dalam antrian.</br>
+- countQueue(): Mengembalikan jumlah elemen dalam antrian saat ini.</br>
+- clearQueue():Menghapus semua elemen dari antrian.</br>
 
-6. Fungsi utama:
--Menciptakan sebuahQueueobjek bernamaantrian.
--Enqueues elemen "Andi" dan "Maya".
--Menampilkan antrian dan ukurannya.
--Menghilangkan antrean suatu elemen.
--Menampilkan antrian dan ukuran yang diperbarui.
--Menghapus antrian.
--Menampilkan antrian kosong dan ukurannya.
+
+4. Fungsi utama:
+   
+- Menciptakan sebuahQueueobjek bernamaantrian.</br>
+- Enqueues elemen "Andi" dan "Maya".</br>
+- Menampilkan antrian dan ukurannya.</br>
+- Menghilangkan antrean suatu elemen.</br>
+- Menampilkan antrian dan ukuran yang diperbarui.</br>
+- Menghapus antrian.</br>
+- Menampilkan antrian kosong dan ukurannya.</br>
 
 ### 2. [Dari nomor 1 buatlah konsep antri dengan atribut Nama mahasiswa dan NIM Mahasiswa]
 
@@ -395,13 +400,32 @@ int main() {
 
 Berikut adalah beberapa kesimpulan singkat:
 
-1.Validasi Input: Meskipun program ini tidak meminta pengguna memasukkan kalimat dengan minimal tiga kata, mungkin ingin menambahkan beberapa validasi untuk memastikan bahwa input memenuhi persyaratan ini.
+1. Struktur MahasiswaNode:
 
-2.Merawat Baris Baru: Ketika seseorang memasukkan kalimat dan tidak mengetik apa pun, mereka akan menghasilkan string kosong yang sedang diproses. Anda mungkin ingin mengatasi hal ini dengan memeriksa input kosong dan meminta mereka memasukkan kalimat yang benar.
+- Struktur ini mendefinisikan a MahasiswaNodeuntuk mewakili satu node dalam daftar tertaut.</br>
+- Setiap node berisi dua bidang: 1. nama_136: A stringuntuk menyimpan nama siswa. , 2. nim_136: A stringuntuk menyimpan nomor ID siswa.
+- next: Sebuah pointer bertipe MahasiswaNode*untuk ditautkan ke node berikutnya dalam daftar.</br>
 
-3.Efisiensi: Metode ini sederhana dan efektif untuk input yang lebih kecil. Namun, untuk input yang lebih besar, terutama kalimat dengan banyak karakter, menggunakan tumpukan untuk pembalikan mungkin bukan metode yang paling efektif.  dapat mencoba salah kalimat dengan dua petunjuk atau mengubah string secara langsung.
-Bertanya dalam Nama: Nama
+2.  Kelas MahasiswaQueue:
 
+- Kelas ini mengelola struktur daftar tertaut dan menyediakan operasi manipulasi antrian khusus untuk data siswa.</br>
+- Ia memelihara frontdan backmenunjuk ke node pertama dan terakhir .</br>
+
+3. perasi Antrian:
+
+- isEmpty():Memeriksa apakah antrian kosong (tidak ada siswa).</br>
+- enqueue(nama_136, nim_136):Menambahkan siswa baru ke belakang antrian.</br>
+- dequeue():Mengeluarkan siswa dari barisan depan (masuk pertama,pertama keluar).</br>
+- viewQueue():Menampilkan semua siswa dalam antrian.</br>
+- countQueue():Mengembalikan jumlah siswa saat ini dalam antrian.</br>
+- clearQueue():Menghapus semua siswa dari antrian.</br>
+
+4. Fungsi Utama:
+
+- Menciptakan sebuahMahasiswaQueueobjek bernamaqueue.</br>
+- Memasuki perulangan yang berulang kali mengambil data siswa dari pengguna dan memasukkannya ke dalam antrean.</br>
+- Setelah setiap operasi enqueue,bertanya kepada pengguna apakah mereka ingin menambah lebih banyak siswa.</br>
+- Setelah perulangan berakhir,menampilkan isi antrian saat ini dan ukurannya.</br>
 
 ## Kesimpulan
 Dalam metode FIFO, atau First-In First-Out, di mana data pertama dimasukkan ke dalam antrian akan dikeluarkan dari antrian, antrian adalah struktur data yang digunakan untuk menyimpan data. Ini adalah kesimpulan dari praktikum Struktur data dan algoritma yang membahas antrian. Untuk melaksanakan antrian, Anda dapat menggunakan array atau linked list. Dalam kasus array, antrian terdiri dari dua pointer, depan dan belakang, yang digunakan untuk mengatur operasi, menambah, dan menampilkan data dalam antrian. Dalam antrian, Anda dapat melakukan beberapa operasi, seperti menambahkan data, menghapus data, peek untuk mengambil data tanpa menghapusnya, isEmpty untuk mengetahui apakah antrian kosong atau penuh, size untuk mengetahui jumlah elemen dalam antrian, dan clearQueue untuk menghapus semua data linked list. Contoh implementasi antrian menggunakan array dan linked list, serta contoh penggunaan operasi antrian untuk mengatur antrian teller, diberikan dalam praktikum.  

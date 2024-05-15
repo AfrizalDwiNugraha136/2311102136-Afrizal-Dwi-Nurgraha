@@ -369,7 +369,7 @@ int main() {
 ```
 
 #### Output:
-![SS]()
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan07/Un%20QUEUE2.PNG)
 
 Berikut adalah beberapa kesimpulan singkat:
 

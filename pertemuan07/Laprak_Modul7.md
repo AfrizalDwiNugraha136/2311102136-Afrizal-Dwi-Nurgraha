@@ -240,7 +240,7 @@ int main() {
 
 ```
 #### Output:
-![SS]()
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan07/Un%20QUEUE.PNG)
 
 Ini adalah ringkasan singkat dari fungsinya:
 

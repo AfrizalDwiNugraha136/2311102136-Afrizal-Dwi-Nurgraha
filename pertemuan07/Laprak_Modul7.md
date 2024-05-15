@@ -245,28 +245,30 @@ int main() {
 Ini adalah ringkasan singkat dari fungsinya:
 
 1. Struktur Node:
-Struct Nodemewakili satu node dalam link list.
-Ini berisi dataanggota untuk menyimpan elemen antrian dan nextpointer untuk menghubungkan ke node berikutnya.
-Kelas Antrian:
+-Struct Nodemewakili satu node dalam link list.
 
-Kelas Queuemengelola struktur daftar tertaut dan menyediakan operasi untuk manipulasi antrian.
-Ia memelihara frontdan rearmenunjuk ke node pertama dan terakhir , dan sizevariabel untuk melacak jumlah elemen.
-Operasi:
+-Ini berisi dataanggota untuk menyimpan elemen antrian dan nextpointer untuk menghubungkan ke node berikutnya.
 
-enqueueAntrian(data): Menambahkan elemen baru datake belakang antrian.
-dequeueAntrian(): Menghapus elemen dari depan antrian.
-viewQueue(): Menampilkan semua elemen dalam antrian.
-countQueue(): Mengembalikan jumlah elemen dalam antrian saat ini.
-clearQueue():Menghapus semua elemen dari antrian.
-Fungsi utama:
+3. Kelas Antrian:
+-Kelas Queuemengelola struktur daftar tertaut dan menyediakan operasi untuk manipulasi antrian.
 
-Menciptakan sebuahQueueobjek bernamaantrian.
-Enqueues elemen "Andi" dan "Maya".
-Menampilkan antrian dan ukurannya.
-Menghilangkan antrean suatu elemen.
-Menampilkan antrian dan ukuran yang diperbarui.
-Menghapus antrian.
-Menampilkan antrian kosong dan ukurannya.
+-Ia memelihara frontdan rearmenunjuk ke node pertama dan terakhir , dan sizevariabel untuk melacak jumlah elemen.
+
+5. Operasi:
+-enqueueAntrian(data): Menambahkan elemen baru datake belakang antrian.
+-dequeueAntrian(): Menghapus elemen dari depan antrian.
+-viewQueue(): Menampilkan semua elemen dalam antrian.
+-countQueue(): Mengembalikan jumlah elemen dalam antrian saat ini.
+-clearQueue():Menghapus semua elemen dari antrian.
+
+6. Fungsi utama:
+-Menciptakan sebuahQueueobjek bernamaantrian.
+-Enqueues elemen "Andi" dan "Maya".
+-Menampilkan antrian dan ukurannya.
+-Menghilangkan antrean suatu elemen.
+-Menampilkan antrian dan ukuran yang diperbarui.
+-Menghapus antrian.
+-Menampilkan antrian kosong dan ukurannya.
 
 ### 2. [Dari nomor 1 buatlah konsep antri dengan atribut Nama mahasiswa dan NIM Mahasiswa]
 

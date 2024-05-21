@@ -267,9 +267,9 @@ int main() {
 ...
 
 ### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
+
 ```C++
 #include <iostream>
-
 using namespace std;
 
 int main(){
@@ -289,7 +289,7 @@ int main(){
     cout << "Angka " << Target_136 << " ditemukan sebanyak " << Count_136 << " kali." << endl;
  return 0;
 }
-...
+```
 
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan08/Un%20SEARCHING3.PNG)
@@ -297,8 +297,7 @@ int main(){
 p
 
 ## Kesimpulan
-
-
+p
 
 ## Referensi
  [1] (https://p3m.sinus.ac.id/jurnal/index.php/TIKomSiN/article/view/546)

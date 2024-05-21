@@ -260,6 +260,7 @@ Langkah-langkahnya:
 8. Membaca huruf yang ingin dicari: Pengguna memasukkan huruf yang ingin dicari dalam kalimat.
 9. Mencari huruf menggunakan binary search: Algoritma binary search digunakan untuk mencari huruf yang diberikan dalam array yang telah diurutkan.
 10. Menampilkan hasil pencarian: Jika huruf ditemukan, program akan menampilkan indeksnya dalam kalimat. Jika huruf tidak ditemukan, program akan menampilkan pesan bahwa huruf tersebut tidak ditemukan.
+    
 
 ### 2. [Buatlah sebuah program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat!]
 
@@ -307,27 +308,26 @@ Langkah-langkah:
 
 1. Membaca kalimat dari pengguna: Pengguna memasukkan kalimat yang ingin dianalisis.
 2. Membuat fungsi isVowel:
-    Fungsi ini menerima karakter sebagai input.
-Mengubah karakter menjadi huruf kecil menggunakan tolower.
-Memeriksa apakah karakter tersebut termasuk dalam vokal ('a', 'e', 'i', 'o', 'u').
-Mengembalikan true jika karakter adalah vokal, dan false jika bukan.
-Membuat fungsi countVowels:
-Fungsi ini menerima string sebagai input.
-Inisialisasi variabel Count dengan 0.
-Mengulangi setiap karakter dalam string.
-Memanggil fungsi isVowel untuk memeriksa apakah karakter tersebut vokal.
-Jika ya, tambahkan 1 ke variabel Count.
-Mengembalikan nilai Count (jumlah vokal).
-Fungsi main:
-Menampilkan pesan selamat datang.
-Membaca kalimat dari pengguna menggunakan getline.
-Memanggil fungsi countVowels untuk menghitung jumlah vokal dalam kalimat.
-Menampilkan hasil perhitungan (jumlah vokal) ke pengguna.
-Fitur Utama:
+   - Fungsi ini menerima karakter sebagai input.</br>
+   - Mengubah karakter menjadi huruf kecil menggunakan tolower.</br>
+   - Memeriksa apakah karakter tersebut termasuk dalam vokal ('a', 'e', 'i', 'o', 'u').</br>
+   - Mengembalikan true jika karakter adalah vokal, dan false jika bukan.</br>
+3. Membuat fungsi countVowels:
+   - Fungsi ini menerima string sebagai input.</br>
+   - Inisialisasi variabel Count dengan 0.</br>
+   - Mengulangi setiap karakter dalam string.</br>
+   - Mengembalikan nilai Count (jumlah vokal).</br>
+4. Fungsi main:
+   - Menampilkan pesan selamat datang.</br>
+   - Membaca kalimat dari pengguna menggunakan getline.</br>
+   - Memanggil fungsi countVowels untuk menghitung jumlah vokal dalam kalimat.</br>
+   - Menampilkan hasil perhitungan (jumlah vokal) ke pengguna.</br>
 
-Fungsi isVowel: Memisahkan logika pengecekan vokal menjadi fungsi terpisah, sehingga mudah digunakan kembali.
-Penggunaan loop for-each: Mempermudah iterasi melalui karakter dalam string.
-Pesan yang jelas: Program menampilkan pesan yang informatif kepada pengguna.
+Fitur Utama:
+1. Fungsi isVowel: Memisahkan logika pengecekan vokal menjadi fungsi terpisah, sehingga mudah digunakan kembali.
+2. Penggunaan loop for-each: Mempermudah iterasi melalui karakter dalam string.
+3. Pesan yang jelas: Program menampilkan pesan yang informatif kepada pengguna.
+   
 
 ### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
 
@@ -357,10 +357,36 @@ int main(){
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan08/Un%20SEARCHING3.PNG)
 
-p
+Program ini menghitung berapa kali angka 4 muncul dalam sebuah array.
+
+Langkah-langkah:
+
+1. Mendefinisikan variabel:
+   - n 136: Ukuran array (10).</br>
+   - Data_136: Array bilangan bulat dengan panjang n_136.</br>
+   - Target_136: Angka yang ingin dicari (4).</br>
+   - Count_136: Penghitung kemunculan angka 4.</br>
+2. Melakukan pencarian sequential:
+   - Perulangan for iterasi melalui setiap elemen dalam array Data_136.</br>
+3. Menampilkan hasil:
+   - Cetak pesan selamat datang.</br>
+   - Cetak array Data_136.</br>
+   - Cetak informasi tentang berapa kali angka Target_136 ditemukan.</br>
+
+Fitur Utama:
+1. Pencarian sequential: Algoritma pencarian sederhana yang memeriksa setiap elemen dalam array secara berurutan.
+2. Loop for: Digunakan untuk mengulangi elemen array secara efisien.
+3. Pesan yang jelas: Program menampilkan informasi yang mudah dipahami kepada pengguna.
 
 ## Kesimpulan
-p
+Hasil dari praktikum struktur data dan algoritma mencakup beberapa algoritma pencarian yang digunakan untuk menemukan nilai tertentu dalam kumpulan data. Dua algoritma pencarian yang dibahas dalam praktikum ini adalah pencarian sequential dan pencarian binar. Pencarian sequential adalah algoritma yang paling umum digunakan untuk data yang tidak terurut. Indeks pertama adalah titik awal dari proses pencarian, yang berlanjut hingga indeks terakhir. Jika data ditemukan, proses pencarian berhenti jika setiap elemen array dibandingkan dengan nilai yang dicari. Jika data tidak ditemukan, proses pencarian juga berhenti.
+
+Sebaliknya, pencarian biner adalah algoritma yang digunakan untuk data terurut. Proses pencarian dimulai dengan membagi data menjadi dua bagian dan menemukan nilai tengahnya. Setelah data yang ditemukan dibandingkan dengan nilai tengah, proses dilanjutkan dengan membagi bagian yang sesuai. Sampai data ditemukan atau tidak ditemukan, proses berhenti. Selain itu, contoh implementasi kedua algoritma ini disajikan dalam praktikum. Menggunakan for loop untuk membandingkan setiap elemen array dengan nilai yang dicari, sedangkan binary search membagi data menjadi dua bagian dan mencari nilai tengahnya.
+
+Kesimpulannya, praktikum struktur data dan algoritma menunjukkan bahwa ada banyak algoritma yang dapat digunakan untuk melakukan pencarian data yang sesuai dengan struktur data dan persyaratan aplikasi.
+
+
+
 
 ## Referensi
  [1] (https://p3m.sinus.ac.id/jurnal/index.php/TIKomSiN/article/view/546)

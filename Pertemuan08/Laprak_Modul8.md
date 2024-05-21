@@ -220,7 +220,7 @@ int main() {
 ```
 
 #### Output:
-![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan08/Un%20SEARCHING.PNG)
+![SS]()
 
 ...
 

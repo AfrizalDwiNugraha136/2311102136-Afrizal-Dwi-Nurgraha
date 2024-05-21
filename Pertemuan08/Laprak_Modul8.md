@@ -132,95 +132,116 @@ int main(){
 ### 1. [Buatlah sebuah program untuk mencari sebuah huruf pada sebuah kalimat yang sudah di input dengan menggunakan Binary Search!]
 
 ```C++
-#include <iostream>
-#include <conio.h>  // Jika menggunakan Windows. Untuk sistem operasi lain, perlu mencari pengganti dari _getche()
-#include <string>
+#include<iostream>
 
 using namespace std;
 
-// Fungsi untuk melakukan pencarian binary pada array karakter
-int binarySearch_136 (char Array_136 [], int Indeks_136 [], int Size_136, char Target_136) {
-    int Kiri_136 = 0;
-    int Kanan_136 = Size_136 - 1;
-
-    // Melakukan binary search selama Kiri_136 tidak melebihi Kanan_136
-    while (Kiri_136 <= Kanan_136) {
-        int Tengah_136 = Kiri_136 + (Kanan_136 - Kiri_136) / 2;
-
-        // Jika huruf Target_136 berada di tengah array
-        if (Array_136 [Tengah_136] == Target_136)
-            return Indeks_136 [Tengah_136];
-
-        // Jika huruf Target_136 berada di sebelah kiri tengah array
-        if (Array_136 [Tengah_136] > Target_136)
-            Kanan_136 = Tengah_136 - 1;
-
-        // Jika huruf Target_136 berada di sebelah kanan tengah array
-        else
-            Kiri_136 = Tengah_136 + 1;
+//Prosedur untuk menampilkan huruf-huruf didalam kalimat
+void TampilkanHurufKalimat_136(char ArrayKalimat_136[], int PanjangKalimat_136){
+    for(int i = 0; i < PanjangKalimat_136; i++){ //perulangan for untuk menampilkan huruf
+        cout << ArrayKalimat_136[i] << '\t';
     }
-
-    // Jika huruf Target_136 tidak ditemukan
-    return -1;
+    cout << endl;
 }
-// Fungsi untuk melakukan selection sort pada array karakter
-void selectionSort_136 (char Array_136 [], int Indeks_136 [], int Size_136) {
-    for (int i_136 = 0; i_136 < Size_136 - 1; ++i_136) {
-        int IndeksTengah_136 = i_136;
-        for (int j_136 = i_136 + 1; j_136 < Size_136; ++j_136) {
-            if (Array_136 [j_136] < Array_136 [IndeksTengah_136]) {
-                IndeksTengah_136 = j_136;
+
+//Prosedur untuk mengurutkan huruf sesuai abjad menggunakan bubble sort
+void BubbleSort_136(char ArrayKalimat_136[], int PanjangKalimat_136){
+    bool Urut_136 = true; 
+    int j = 0; 
+    char temp_136; 
+    while(Urut_136){ 
+        Urut_136 = false;
+        j++; 
+        for(int i = 0; i < PanjangKalimat_136 - j; i++){ 
+            if(ArrayKalimat_136[i] > ArrayKalimat_136[i + 1]){  
+                temp_136 = ArrayKalimat_136[i]; 
+                ArrayKalimat_136[i] = ArrayKalimat_136[i + 1]; 
+                ArrayKalimat_136[i + 1] = temp_136; 
+                Urut_136 = true; 
             }
         }
-        // Menukar elemen minimum dengan elemen pertama
-        swap(Array_136 [i_136], Array_136 [IndeksTengah_136]);
-        swap(Indeks_136 [i_136], Indeks_136 [IndeksTengah_136]);
     }
 }
 
-int main() {
-    string sentence_136;
-    char Target_136;
-    cout << "\n======= SELAMAT DATANG DI PROGRAM BINARY SEARCH BY AFRIZAL DWI NURGRAHA =======" << endl;
-    cout << "\n>> Masukkan kalimat : ";
-    getline(cin, sentence_136);
+//Prosedur untuk mencari huruf didalam kalimat menggunakan binary search
+void BinarySearch_136(char ArrayKalimat_136[], int PanjangKalimat_136, char HurufYangDicari_136){
+    int awal_136, tengah_136, akhir_136, Posisi_136;  
+    bool b_flag = false; 
+    awal_136 = 0; 
+    akhir_136 = PanjangKalimat_136; 
+    while(!b_flag && awal_136 <= akhir_136){ 
+        tengah_136 = (awal_136 + akhir_136)/2; 
+        if(HurufYangDicari_136 == ArrayKalimat_136[tengah_136]){ 
+            Posisi_136 = tengah_136; 
+            b_flag = true; 
+            break; 
+        } else if(HurufYangDicari_136 < ArrayKalimat_136[tengah_136]){ 
+            akhir_136 = tengah_136 - 1; 
+        } else if(HurufYangDicari_136 > ArrayKalimat_136[tengah_136]){ 
+            awal_136 = tengah_136 + 1; 
+        }
+    }
+    if(b_flag){ 
+        cout << "Huruf " << HurufYangDicari_136 << " ditemukan pada index ke-";
+        for(int i = 0; i < PanjangKalimat_136; i++){
+            if(HurufYangDicari_136 == ArrayKalimat_136[i]){
+                cout << i;
+                if(ArrayKalimat_136[i + 1] == HurufYangDicari_136){
+                    cout << ", ";
+                }
+            }
+        }
+    } else { 
+        cout << "Huruf " << HurufYangDicari_136 << " tidak ditemukan" << endl;
+    }
+}
 
-    // Membuat array untuk menyimpan karakter dan indeks asli mereka
-    int len = sentence_136.size();
-    char charArray[100];
-    int Indeks_136 [100];
-    int Size_136 = 0;
+int main(){
+    string InputKalimat_136, KalimatTanpaSpasi_136; 
+    int PanjangKalimat_136; 
+    char HurufYangDicari_136; 
+    cout << "--- PROGRAM MENCARI HURUF DALAM KALIMAT BY AFRIZAL DWI NUGRAHA---" << endl;
+    cout << "Masukkan kalimat = "; 
+    getline(cin, InputKalimat_136); 
+    cout << endl;
 
-    for (int i_136 = 0; i_136 < len; ++i_136) {
-        if (sentence_136[i_136] != ' ') {  // Mengabaikan spasi
-            charArray[Size_136] = sentence_136[i_136];
-            Indeks_136 [Size_136] = i_136;
-            ++Size_136;
+    // Menghapus karakter spasi dari kalimat
+    KalimatTanpaSpasi_136 = ""; 
+    for(char c : InputKalimat_136){
+        if(c != ' ') { 
+            KalimatTanpaSpasi_136 += c; 
         }
     }
 
-    // Mengurutkan array karakter menggunakan selection sort
-    selectionSort_136 (charArray, Indeks_136 , Size_136);
-
-    cout << ">> Masukkan huruf yang ingin dicari : ";
-    cin >> Target_136;
-
-    // Mencari huruf dalam array yang telah diurutkan
-    int Index_136 = binarySearch_136 (charArray, Indeks_136 , Size_136, Target_136);
-
-    if (Index_136 != -1) {
-        cout << "[2136] Huruf '" << Target_136 << "' ditemukan pada indeks ke-" << Index_136 << " dalam kalimat." << endl;
-    } else {
-        cout << "[2136] Huruf '" << Target_136 << "' tidak ditemukan dalam kalimat." << endl;
+    //menghitung panjang kalimat
+    PanjangKalimat_136 = KalimatTanpaSpasi_136.length();
+    char ArrayKalimat_136[PanjangKalimat_136];
+    for(int i = 0; i < PanjangKalimat_136; i++){
+        ArrayKalimat_136[i] = KalimatTanpaSpasi_136[i]; 
     }
 
-    _getche();  // Hanya untuk Windows. Jika menggunakan OS lain, gunakan pengganti sesuai kebutuhan
+    //Menampilkan setiap huruf dalam kalimat sebelum di urutkan
+    cout << "Urutan huruf dalam kalimat sebelum diurutkan (spasi dihilangkan) = " << endl;
+    TampilkanHurufKalimat_136(ArrayKalimat_136, PanjangKalimat_136); 
+
+    //Menampilkan setiap huruf dalam kalimat setelah di urutkan
+    cout << "Urutan huruf dalam kalimat setelah diurutkan (spasi dihilangkan) = " << endl;
+    BubbleSort_136(ArrayKalimat_136, PanjangKalimat_136); 
+    TampilkanHurufKalimat_136(ArrayKalimat_136, PanjangKalimat_136); 
+    cout << endl;
+
+    //User menginputkan huruf yang ingin dicari
+    cout << "Masukkan huruf yang ingin dicari = ";
+    cin >> HurufYangDicari_136; 
+
+    BinarySearch_136(ArrayKalimat_136, PanjangKalimat_136, HurufYangDicari_136);
+
     return 0;
 }
 ```
 
 #### Output:
-![SS]()
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan08/Un%20SEARCHING.PNG)
 
 ...
 

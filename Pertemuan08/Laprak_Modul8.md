@@ -243,7 +243,23 @@ int main(){
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan08/Un%20SEARCHING.PNG)
 
-...
+Pengguna dapat mencari huruf tertentu dalam kalimat dengan aplikasi ini, Fitur Utama:
+1. Menghapus spasi: Program ini menangani kalimat yang memiliki spasi di tengahnya. Untuk meningkatkan efisiensi, kalimat diurutkan sebelum pencarian.
+2. Binary search: Algoritma pencarian biner digunakan untuk mempercepat pencarian huruf.
+3. Pesan yang jelas: Untuk setiap langkah, program menampilkan pesan yang jelas kepada pengguna.
+
+Langkah-langkahnya:
+
+1. Membaca kalimat dari pengguna: Pengguna memasukkan kalimat yang ingin dianalisis.
+2. Menghapus spasi dari kalimat: Spasi dihilangkan dari kalimat untuk mempermudah proses pencarian.
+3. Menghitung panjang kalimat: Panjang kalimat tanpa spasi dihitung.
+4. Membuat array untuk menyimpan huruf: Array dibuat dengan panjang yang sama dengan panjang kalimat tanpa spasi. Setiap karakter dari kalimat tanpa spasi disalin ke dalam array.
+5. Menampilkan huruf dalam kalimat (sebelum diurutkan): Setiap huruf dalam array dicetak ke layar.
+6. Mengurutkan huruf dalam kalimat (menggunakan bubble sort): Algoritma bubble sort digunakan untuk mengurutkan huruf dalam array.
+7. Menampilkan huruf dalam kalimat (setelah diurutkan): Setiap huruf dalam array yang telah diurutkan dicetak ke layar.
+8. Membaca huruf yang ingin dicari: Pengguna memasukkan huruf yang ingin dicari dalam kalimat.
+9. Mencari huruf menggunakan binary search: Algoritma binary search digunakan untuk mencari huruf yang diberikan dalam array yang telah diurutkan.
+10. Menampilkan hasil pencarian: Jika huruf ditemukan, program akan menampilkan indeksnya dalam kalimat. Jika huruf tidak ditemukan, program akan menampilkan pesan bahwa huruf tersebut tidak ditemukan.
 
 ### 2. [Buatlah sebuah program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat!]
 
@@ -285,7 +301,33 @@ int main() {
 #### Output:
 ![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/Pertemuan08/Un%20SEARCHING2.PNG)
 
-...
+Program ini menghitung jumlah huruf vokal dalam sebuah kalimat yang dimasukkan oleh pengguna.
+
+Langkah-langkah:
+
+1. Membaca kalimat dari pengguna: Pengguna memasukkan kalimat yang ingin dianalisis.
+2. Membuat fungsi isVowel:
+    Fungsi ini menerima karakter sebagai input.
+Mengubah karakter menjadi huruf kecil menggunakan tolower.
+Memeriksa apakah karakter tersebut termasuk dalam vokal ('a', 'e', 'i', 'o', 'u').
+Mengembalikan true jika karakter adalah vokal, dan false jika bukan.
+Membuat fungsi countVowels:
+Fungsi ini menerima string sebagai input.
+Inisialisasi variabel Count dengan 0.
+Mengulangi setiap karakter dalam string.
+Memanggil fungsi isVowel untuk memeriksa apakah karakter tersebut vokal.
+Jika ya, tambahkan 1 ke variabel Count.
+Mengembalikan nilai Count (jumlah vokal).
+Fungsi main:
+Menampilkan pesan selamat datang.
+Membaca kalimat dari pengguna menggunakan getline.
+Memanggil fungsi countVowels untuk menghitung jumlah vokal dalam kalimat.
+Menampilkan hasil perhitungan (jumlah vokal) ke pengguna.
+Fitur Utama:
+
+Fungsi isVowel: Memisahkan logika pengecekan vokal menjadi fungsi terpisah, sehingga mudah digunakan kembali.
+Penggunaan loop for-each: Mempermudah iterasi melalui karakter dalam string.
+Pesan yang jelas: Program menampilkan pesan yang informatif kepada pengguna.
 
 ### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
 

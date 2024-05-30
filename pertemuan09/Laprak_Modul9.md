@@ -481,10 +481,9 @@ int main() {
 ```
 
 #### Output:
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH.PNG)
 
-...
-    
+Output dari program ini adalah matriks ketetanggaan yang menunjukkan jarak antara setiap pasangan kota. Setiap elemen dalam matriks harus memiliki lebar minimal dua karakter. Cara sederhana untuk membuat dan menampilkan grafik yang menunjukkan jarak antar kota disediakan oleh program ini, itu dapat diperluas untuk menangani operasi grafik dan algoritma yang lebih kompleks.    
 
 ### 2. [Modifikasi guided tree diatas dengan program menu menggunakan input data tree dari user dan berikan fungsi tambahan untuk menampilkan node child dan descendant dari node yang diinput kan!]
 
@@ -1177,35 +1176,51 @@ int main()
 ```
 
 #### Output:
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(1).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(2).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(3).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(4).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(5).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(6).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(7).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(8).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(9).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(10).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(11).PNG)
 
-![SS](.PNG)
+![SS](https://github.com/AfrizalDwiNugraha136/2311102136-Afrizal-Dwi-Nurgraha/blob/main/pertemuan09/Un%20GRAPH2(12).PNG)
 
 
-...
+kode C++ untuk struktur data pohon biner yang mencakup berbagai fungsi pengelolaan pohon, seperti membuat, memasukkan, memperbarui, mengambil, menemukan, menampilkan karakteristik, dan melakukan traversal.
 
 ## Kesimpulan
-...
+1. Graf (Graph):
+
+- Graf adalah struktur data yang menunjukkan hubungan antara objek dalam bentuk node atau vertex serta sambungan antara node tersebut dalam bentuk sisi atau tepi.
+
+- Graf dapat digunakan untuk berbagai aplikasi, termasuk pemetaan jalan, pemodelan data, dan jaringan sosial.
+
+- Graf berarah, tak berarah, dan dengan berat adalah tiga kategori graf.
+
+2. Tree (Pohon):
+   
+- Sebuah pohon adalah struktur data yang terdiri dari satu set node yang terhubung dalam grafik, dengan setiap node memiliki setidaknya satu simpul induk dan nol atau lebih simpul anak dalam urutan khusus.
+
+- Pohon keluarga, skema pertandingan, dan struktur organisasi adalah contoh data hirarki yang disimpan dalam pohon.
+
+- Pohon memiliki kemampuan untuk melakukan berbagai operasi, seperti membuat, membersihkan, kosong, memasukkan, menemukan, mengubah, mengambil kembali, menghapus subpohon, dan traversal (pre-order, in-order, dan post-order).
+
+
 
 ## Referensi
  [1] (https://osf.io/preprints/osf/tcdfg)

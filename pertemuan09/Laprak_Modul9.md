@@ -418,7 +418,8 @@ int main()
 Cantumkan NIM pada salah satu variabel di dalam program.
 Contoh : int nama_22102003;
 ### 1. [Buatlah program graph dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya.]
-
+Output Program :
+![SS](.PNG)
 
 ```C++
 #include <iostream>
